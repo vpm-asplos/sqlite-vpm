@@ -1,0 +1,12 @@
+* SQLite NoFS Edition
+** Building instruction
+#+BEGIN_SRC SHELL
+autoreconf -fi
+mkdir bld
+cd bld
+../configure --enable-nvdimm
+make
+#+END_SRC
+** Benchmark
+*** Phoronix Test Suite
+*** 

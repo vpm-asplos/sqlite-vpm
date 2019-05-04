@@ -1,0 +1,8 @@
+* pts-tests
+pts-tests is the Phoronix Test Suite.
+** normalw.sh
+1. Create the table ~pts~ into the database file pts.
+2. Write 2500 records into the table ~pts~.
+** normalr.sh
+1. Read 2500 lines from the table ~pts~.
+* 

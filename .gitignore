@@ -1,0 +1,7 @@
+bld/
+.ccls-cache/
+autom4te.cache/
+*.o
+*~
+pts
+*.db

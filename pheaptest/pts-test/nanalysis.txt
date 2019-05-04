@@ -1,0 +1,2776 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 61.91      0.13     0.13     5002    25.99    34.99  sqlite3VdbeExec
+ 11.90      0.16     0.03  6250001     0.00     0.00  btreeParseCellPtr
+  4.76      0.17     0.01  6327501     0.00     0.00  sqlite3BtreeNext
+  4.76      0.18     0.01    82501     0.12     0.12  btreeNext
+  4.76      0.19     0.01    15006     0.67     0.67  sqlite3WalkExprList
+  4.76      0.20     0.01     7500     1.33     1.33  sqlite3WhereExprUsage
+  4.76      0.21     0.01                             atexit
+  2.38      0.21     0.01                             btreeParseCellPtrNoPayload
+  0.00      0.21     0.00  6250001     0.00     0.00  getCellInfo
+  0.00      0.21     0.00  6250001     0.00     0.00  sqlite3VdbeSerialGet
+  0.00      0.21     0.00   117637     0.00     0.00  sqlite3DbFreeNN
+  0.00      0.21     0.00   117622     0.00     0.00  sqlite3DbMallocRawNN
+  0.00      0.21     0.00    85036     0.00     0.00  sqlite3PcacheFetchFinish
+  0.00      0.21     0.00    85002     0.00     0.00  getPageNormal
+  0.00      0.21     0.00    85002     0.00     0.00  pcache1Fetch
+  0.00      0.21     0.00    85002     0.00     0.00  sqlite3PcacheRelease
+  0.00      0.21     0.00    85001     0.00     0.00  pcache1Unpin
+  0.00      0.21     0.00    82501     0.00     0.00  getAndInitPage
+  0.00      0.21     0.00    82501     0.00     0.00  sqlite3PagerUnrefNotNull
+  0.00      0.21     0.00    80001     0.00     0.00  moveToLeftmost
+  0.00      0.21     0.00    80000     0.00     0.00  moveToChild
+  0.00      0.21     0.00    80000     0.00     0.00  moveToParent
+  0.00      0.21     0.00    57518     0.00     0.00  sqlite3VdbeMemGrow
+  0.00      0.21     0.00    47591     0.00     0.00  sqlite3DbMallocRaw
+  0.00      0.21     0.00    42513     0.00     0.00  walkExpr
+  0.00      0.21     0.00    40223     0.00     0.00  sqlite3GetToken
+  0.00      0.21     0.00    40024     0.00     0.00  sqlite3StrAccumAppend
+  0.00      0.21     0.00    40022     0.00     0.00  sqlite3VdbeAddOp3
+  0.00      0.21     0.00    35008     0.00     0.00  sqlite3ExprWalkNoop
+  0.00      0.21     0.00    20006     0.00     0.00  sqlite3ValueText
+  0.00      0.21     0.00    20006     0.00     0.00  sqlite3VdbeMemSetStr
+  0.00      0.21     0.00    20006     0.00     0.00  sqlite3_result_text64
+  0.00      0.21     0.00    20003     0.00     0.00  columnMallocFailure
+  0.00      0.21     0.00    20003     0.00     0.00  columnMem
+  0.00      0.21     0.00    17512     0.00     0.00  sqlite3VXPrintf
+  0.00      0.21     0.00    17506     0.00     0.00  sqlite3ExprDeleteNN
+  0.00      0.21     0.00    17504     0.00     0.00  resolveExprStep
+  0.00      0.21     0.00    17500     0.00     0.00  sqlite3_debug
+  0.00      0.21     0.00    15203     0.00     0.00  sqlite3_free
+  0.00      0.21     0.00    15051     0.00     0.00  whereLoopClear
+  0.00      0.21     0.00    15012     0.00     0.00  sqlite3DbRealloc
+  0.00      0.21     0.00    15009     0.00     0.00  sqlite3TableLock
+  0.00      0.21     0.00    15008     0.00     0.00  sqlite3StrAccumFinish
+  0.00      0.21     0.00    15008     0.00     0.00  strAccumFinishRealloc
+  0.00      0.21     0.00    15007     0.00     0.00  sqlite3DbStrNDup
+  0.00      0.21     0.00    15006     0.00     0.00  sqlite3VMPrintf
+  0.00      0.21     0.00    15005     0.00     0.00  sqlite3VdbeComment
+  0.00      0.21     0.00    15005     0.00     0.00  vdbeVComment
+  0.00      0.21     0.00    15004     0.00     0.00  sqlite3IdListAppend
+  0.00      0.21     0.00    15003     0.00     0.00  sqlite3ExprCodeTarget
+  0.00      0.21     0.00    15001     0.00     0.00  sqlite3ExprAlloc
+  0.00      0.21     0.00    12503     0.00     0.00  sqlite3ExprCodeGetColumn
+  0.00      0.21     0.00    12503     0.00     0.00  whereLoopClearUnion
+  0.00      0.21     0.00    12502     0.00     0.00  sqlite3CollapseDatabaseArray
+  0.00      0.21     0.00    10423     0.00     0.00  pthreadMutexEnter
+  0.00      0.21     0.00    10421     0.00     0.00  pthreadMutexLeave
+  0.00      0.21     0.00    10016     0.00     0.00  applyNumericAffinity
+  0.00      0.21     0.00    10008     0.00     0.00  sqlite3ExprListDelete
+  0.00      0.21     0.00    10006     0.00     0.00  sqlite3_uri_boolean
+  0.00      0.21     0.00    10005     0.00     0.00  sqlite3ResolveExprNames
+  0.00      0.21     0.00    10004     0.00     0.00  sqlite3IsRowid
+  0.00      0.21     0.00    10004     0.00     0.00  unixFileLock
+  0.00      0.21     0.00    10003     0.00     0.00  columnName
+  0.00      0.21     0.00    10003     0.00     0.00  columnTypeImpl
+  0.00      0.21     0.00    10003     0.00     0.00  sqlite3ExprCodeGetColumnOfTable
+  0.00      0.21     0.00    10003     0.00     0.00  sqlite3_column_text
+  0.00      0.21     0.00    10003     0.00     0.00  sqlite3_value_text
+  0.00      0.21     0.00    10000     0.00     0.00  sqlite3Expr
+  0.00      0.21     0.00    10000     0.00     0.00  sqlite3ExprAffinity
+  0.00      0.21     0.00    10000     0.00     0.00  sqlite3_column_name
+  0.00      0.21     0.00    10000     0.00     0.00  sqlite3_column_type
+  0.00      0.21     0.00     7579     0.00     0.00  sqlite3LogEstAdd
+  0.00      0.21     0.00     7512     0.00     0.00  yy_destructor
+  0.00      0.21     0.00     7505     0.00     0.00  vdbeClrCopy
+  0.00      0.21     0.00     7503     0.00     1.33  memjrnlTruncate
+  0.00      0.21     0.00     7503     0.00     0.00  sqlite3DbReallocOrFree
+  0.00      0.21     0.00     7503     0.00     0.00  sqlite3VdbeChangeP4
+  0.00      0.21     0.00     7502     0.00     0.00  exprListDeleteNN
+  0.00      0.21     0.00     5399     0.00     0.00  sqlite3MemSize
+  0.00      0.21     0.00     5204     0.00     0.00  findElementWithHash
+  0.00      0.21     0.00     5008     0.00     0.00  sqlite3VdbeCreate
+  0.00      0.21     0.00     5005     0.00     0.00  pragmaVtabBestIndex
+  0.00      0.21     0.00     5005     0.00     0.00  querySharedCacheTableLock
+  0.00      0.21     0.00     5005     0.00     0.00  sqlite3DeleteTable
+  0.00      0.21     0.00     5005     0.00     0.00  sqlite3VdbeHalt
+  0.00      0.21     0.00     5004     0.00     0.00  sqlite3PagerUnrefPageOne
+  0.00      0.21     0.00     5004     0.00     0.00  whereScanInit
+  0.00      0.21     0.00     5004     0.00     0.00  whereScanNext
+  0.00      0.21     0.00     5002     0.00     0.00  computeYMD_HMS
+  0.00      0.21     0.00     5002     0.00     0.00  invokeProfileCallback
+  0.00      0.21     0.00     5002     0.00     0.00  sqlite3VdbeAddOp4Int
+  0.00      0.21     0.00     5002     0.00    34.99  sqlite3_step
+  0.00      0.21     0.00     5002     0.00     0.00  vdbeSafetyNotNull
+  0.00      0.21     0.00     5001     0.00     0.00  exprNodeIsConstant
+  0.00      0.21     0.00     5001     0.00     0.00  whereLoopFindLesser
+  0.00      0.21     0.00     5000     0.00     0.00  exprMightBeIndexed
+  0.00      0.21     0.00     5000     0.00     0.00  sqlite3CompareAffinity
+  0.00      0.21     0.00     5000     0.00     0.00  sqlite3ExprCodeTemp
+  0.00      0.21     0.00     5000     0.00     0.00  sqlite3_column_count
+  0.00      0.21     0.00     2681     0.00     0.00  sqlite3Malloc
+  0.00      0.21     0.00     2681     0.00     0.00  sqlite3MemFree
+  0.00      0.21     0.00     2681     0.00     0.00  sqlite3MemMalloc
+  0.00      0.21     0.00     2681     0.00     0.00  sqlite3MemRoundup
+  0.00      0.21     0.00     2535     0.00     0.00  unixRead
+  0.00      0.21     0.00     2531     0.00     0.00  sqlite3Dequote
+  0.00      0.21     0.00     2525     0.00     0.00  sqlite3_initialize
+  0.00      0.21     0.00     2507     0.00     0.00  sqlite3AuthCheck
+  0.00      0.21     0.00     2506     0.00     0.00  sqlite3BtreeGetMeta
+  0.00      0.21     0.00     2506     0.00     0.00  sqlite3VtabUnlockList
+  0.00      0.21     0.00     2505     0.00     0.00  sqlite3FindTable
+  0.00      0.21     0.00     2505     0.00     0.00  sqlite3GetInt32
+  0.00      0.21     0.00     2505     0.00     0.00  sqlite3SafetyCheckOk
+  0.00      0.21     0.00     2505     0.00     0.00  unixDeviceCharacteristics
+  0.00      0.21     0.00     2504     0.00     0.00  closePendingFds
+  0.00      0.21     0.00     2504     0.00     0.00  dupedExprNodeSize
+  0.00      0.21     0.00     2504     0.00     0.00  growOp3
+  0.00      0.21     0.00     2504     0.00     0.00  resolveP2Values
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3LeaveMutexAndCloseZombie
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3LockAndPrepare
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3ParserReset
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3Prepare
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3ReadSchema
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3RunParser
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3VdbeClearObject
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3VdbeDelete
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3VdbeFinalize
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3VdbeMakeReady
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3VdbeReset
+  0.00      0.21     0.00     2504     0.00     0.00  sqlite3_close_v2
+  0.00      0.21     0.00     2504     0.00     0.00  vdbeFreeOpArray
+  0.00      0.21     0.00     2503     0.00     0.00  btreeEndTransaction
+  0.00      0.21     0.00     2503     0.00     0.00  callFinaliser
+  0.00      0.21     0.00     2503     0.00     0.00  setSectorSize
+  0.00      0.21     0.00     2503     0.00     0.00  sqlite3NameFromToken
+  0.00      0.21     0.00     2503     0.00     0.00  sqlite3WhereFindTerm
+  0.00      0.21     0.00     2503     0.00     0.00  sqlite3_finalize
+  0.00      0.21     0.00     2502     0.00     0.00  freeP4
+  0.00      0.21     0.00     2502     0.00     0.00  local_getline
+  0.00      0.21     0.00     2502     0.00     0.00  pagerUnlockAndRollback
+  0.00      0.21     0.00     2502     0.00     0.00  pager_unlock
+  0.00      0.21     0.00     2502     0.00     0.00  pcache1Truncate
+  0.00      0.21     0.00     2502     0.00     0.00  releaseAllSavepoints
+  0.00      0.21     0.00     2502     0.00     0.00  sqlite3BitvecDestroy
+  0.00      0.21     0.00     2502     0.00     0.00  sqlite3BtreeBeginTrans
+  0.00      0.21     0.00     2502     0.00     0.00  sqlite3IndexedByLookup
+  0.00      0.21     0.00     2502     0.00     0.00  sqlite3_snprintf
+  0.00      0.21     0.00     2502     0.00     0.00  unixAccess
+  0.00      0.21     0.00     2502     0.00     0.00  unixUnlock
+  0.00      0.21     0.00     2502     0.00     0.00  wherePathSolver
+  0.00      0.21     0.00     2501     0.00     0.00  _all_whitespace
+  0.00      0.21     0.00     2501     0.00     0.00  allocateCursor
+  0.00      0.21     0.00     2501     0.00     0.00  btreeGetPage
+  0.00      0.21     0.00     2501     0.00     0.00  btreeReleaseAllCursorPages
+  0.00      0.21     0.00     2501     0.00     0.00  clearSelect
+  0.00      0.21     0.00     2501     0.00     0.00  computeLimitRegisters
+  0.00      0.21     0.00     2501     0.00     0.00  dupedExprSize
+  0.00      0.21     0.00     2501     0.00     0.00  exprDup
+  0.00      0.21     0.00     2501     0.00     0.00  exprSetHeight
+  0.00      0.21     0.00     2501     0.00     0.00  moveToRoot
+  0.00      0.21     0.00     2501     0.00     0.00  output_quoted_escaped_string
+  0.00      0.21     0.00     2501     0.00     0.00  pagerPagecount
+  0.00      0.21     0.00     2501     0.00     0.00  pager_end_transaction
+  0.00      0.21     0.00     2501     0.00     0.00  resolveOrderGroupBy
+  0.00      0.21     0.00     2501     0.00     0.00  resolveSelectStep
+  0.00      0.21     0.00     2501     0.00     0.00  selectAddSubqueryTypeInfo
+  0.00      0.21     0.00     2501     0.00     0.00  selectExpander
+  0.00      0.21     0.00     2501     0.00     0.00  selectInnerLoop
+  0.00      0.21     0.00     2501     0.00     0.00  selectPopWith
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3BtreeCloseCursor
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3BtreeCursor
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3CodeVerifySchema
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3ExprCacheRemove
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3ExprCodeExprList
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3ExprCollSeq
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3ExprIsInteger
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3LocateTable
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3LocateTableItem
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3OpenTable
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3PagerSharedLock
+  0.00      0.21     0.00     2501     0.00     4.00  sqlite3Select
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SelectNew
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SelectPrep
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SelectWalkNoop
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SrcListAppend
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SrcListAppendFromTerm
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SrcListAssignCursors
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3SrcListDelete
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3VdbeMemStringify
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3VdbeSetNumCols
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3VdbeTransferError
+  0.00      0.21     0.00     2501     0.00     4.00  sqlite3WhereBegin
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3WhereClauseClear
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3WhereEnd
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3WhereSplit
+  0.00      0.21     0.00     2501     0.00     0.00  sqlite3_prepare_v2
+  0.00      0.21     0.00     2501     0.00     0.00  unixFileSize
+  0.00      0.21     0.00     2501     0.00     0.00  unixLock
+  0.00      0.21     0.00     2501     0.00     0.00  valueToText
+  0.00      0.21     0.00     2501     0.00     0.00  vdbeChangeP4Full
+  0.00      0.21     0.00     2501     0.00     0.00  whereInfoFree
+  0.00      0.21     0.00     2501     0.00     0.00  whereLoopAddBtree
+  0.00      0.21     0.00     2501     0.00     0.00  whereLoopAddBtreeIndex
+  0.00      0.21     0.00     2501     0.00     0.00  whereLoopAddOr
+  0.00      0.21     0.00     2501     0.00     0.00  whereLoopOutputAdjust
+  0.00      0.21     0.00     2500     0.00    34.99  callback
+  0.00      0.21     0.00     2500     0.00     0.00  codeCompare
+  0.00      0.21     0.00     2500     0.00     0.00  codeInteger
+  0.00      0.21     0.00     2500     0.00     0.00  comparisonAffinity
+  0.00      0.21     0.00     2500     0.00     4.00  exprAnalyze
+  0.00      0.21     0.00     2500     0.00     0.00  exprSrcCount
+  0.00      0.21     0.00     2500     0.00    78.00  runOneSqlLine
+  0.00      0.21     0.00     2500     0.00     0.00  shell_callback
+  0.00      0.21     0.00     2500     0.00    78.00  shell_exec
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3BinaryCompareCollSeq
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3ExprAttachSubtrees
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3ExprCode
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3ExprCodeAtInit
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3ExprIfFalse
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3Init
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3PExpr
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3VdbeMemMakeWriteable
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3VdbeMemShallowCopy
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3_complete
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3_malloc64
+  0.00      0.21     0.00     2500     0.00     0.00  sqlite3_sql
+  0.00      0.21     0.00     2500     0.00     0.00  termCanDriveIndex
+  0.00      0.21     0.00     2500     0.00     0.00  valueFromExpr.constprop.688
+  0.00      0.21     0.00     2500     0.00     0.00  whereClauseInsert
+  0.00      0.21     0.00      103     0.00     0.00  sqlite3FindFunction
+  0.00      0.21     0.00       68     0.00     0.00  sqlite3HashInsert
+  0.00      0.21     0.00       67     0.00     0.00  dbMallocRawFinish
+  0.00      0.21     0.00       56     0.00     0.00  sqlite3DbMallocZero
+  0.00      0.21     0.00       44     0.00     0.00  sqlite3CreateFunc
+  0.00      0.21     0.00       43     0.00     0.00  matchQuality
+  0.00      0.21     0.00       37     0.00     0.00  sqlite3_create_function_v2
+  0.00      0.21     0.00       34     0.00     0.00  btreeInitPage
+  0.00      0.21     0.00       34     0.00     0.00  decodeFlags
+  0.00      0.21     0.00       34     0.00     0.00  pcache1FetchStage2
+  0.00      0.21     0.00       34     0.00     0.00  pcache1FreePage
+  0.00      0.21     0.00       34     0.00     0.00  pcacheFetchFinishWithInit
+  0.00      0.21     0.00       27     0.00     0.00  sqlite3ErrorFinish
+  0.00      0.21     0.00       19     0.00     0.00  pthreadMutexAlloc
+  0.00      0.21     0.00       16     0.00     0.00  pcache1Free
+  0.00      0.21     0.00       15     0.00     0.00  pcache1Alloc
+  0.00      0.21     0.00       15     0.00     0.00  sqlite3_create_function
+  0.00      0.21     0.00       14     0.00     0.00  createModule
+  0.00      0.21     0.00       14     0.00     0.00  sqlite3AffinityType
+  0.00      0.21     0.00       14     0.00     0.00  sqlite3VtabCreateModule
+  0.00      0.21     0.00       11     0.00     0.00  findCollSeqEntry
+  0.00      0.21     0.00       11     0.00     0.00  sqlite3HashClear
+  0.00      0.21     0.00        7     0.00     0.00  fts3MallocZero
+  0.00      0.21     0.00        7     0.00     0.00  sqlite3MallocZero
+  0.00      0.21     0.00        7     0.00     0.00  sqlite3_malloc
+  0.00      0.21     0.00        7     0.00     0.00  sqlite3_overload_function
+  0.00      0.21     0.00        6     0.00     0.00  pthreadMutexInit
+  0.00      0.21     0.00        6     0.00     0.00  sqlite3MutexInit
+  0.00      0.21     0.00        5     0.00     0.00  createCollation
+  0.00      0.21     0.00        5     0.00     0.00  sqlite3_vfs_register
+  0.00      0.21     0.00        5     0.00     0.00  unixFileControl
+  0.00      0.21     0.00        5     0.00     0.00  vfsUnlink
+  0.00      0.21     0.00        4     0.00     0.00  pcache1EnforceMaxPage
+  0.00      0.21     0.00        4     0.00     0.00  sqlite3DbSpanDup
+  0.00      0.21     0.00        4     0.00     0.00  sqlite3_errcode
+  0.00      0.21     0.00        3     0.00     0.00  deleteTable
+  0.00      0.21     0.00        3     0.00     0.00  freeIndex
+  0.00      0.21     0.00        3     0.00     0.00  fts3EvalNearTrim
+  0.00      0.21     0.00        3     0.00     0.00  fts3StrHash
+  0.00      0.21     0.00        3     0.00     0.00  pcache1Cachesize
+  0.00      0.21     0.00        3     0.00     0.00  pragmaLocate
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3BtreeSchema
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3CheckObjectName
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3EndTable
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3ExprCompare
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3ExprListCompare
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3FindIndex
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3Fts3HashInsert
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3InitCallback
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3InsertBuiltinFuncs
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3StartTable
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3_create_module
+  0.00      0.21     0.00        3     0.00     0.00  sqlite3_uri_parameter
+  0.00      0.21     0.00        3     0.00     0.00  unicodeDestroy
+  0.00      0.21     0.00        2     0.00     0.00  pager_reset
+  0.00      0.21     0.00        2     0.00     0.00  resolve_backslashes
+  0.00      0.21     0.00        2     0.00     0.00  saveCursorsOnList
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3BtreeRollback
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3DbStrDup
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3InitOne
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3PagerSetPagesize
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3PcacheTruncate
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3SchemaClear
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3SchemaGet
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3_config
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3_vfs_find
+  0.00      0.21     0.00        2     0.00     0.00  sqlite3_vmprintf
+  0.00      0.21     0.00        2     0.00     0.00  verifyDbFile
+  0.00      0.21     0.00        2     0.00     0.00  wherePathSatisfiesOrderBy
+  0.00      0.21     0.00        1     0.00     0.00  arDotCommand
+  0.00      0.21     0.00        1     0.00     0.00  btreeEnterAll
+  0.00      0.21     0.00        1     0.00     0.00  closeUnixFile
+  0.00      0.21     0.00        1     0.00     0.00  dbpageClose
+  0.00      0.21     0.00        1     0.00     0.00  deduceDatabaseType
+  0.00      0.21     0.00        1     0.00     0.00  do_meta_command
+  0.00      0.21     0.00        1     0.00     0.00  fts3Rehash
+  0.00      0.21     0.00        1     0.00     0.00  fts3StrCompare
+  0.00      0.21     0.00        1     0.00     0.00  hashDestroy
+  0.00      0.21     0.00        1     0.00     0.00  keyInfoFromExprList
+  0.00      0.21     0.00        1     0.00     0.00  openDatabase
+  0.00      0.21     0.00        1     0.00     0.00  pcache1Create
+  0.00      0.21     0.00        1     0.00     0.00  pcache1Destroy
+  0.00      0.21     0.00        1     0.00     0.00  pcache1Init
+  0.00      0.21     0.00        1     0.00     0.00  pcache1TruncateUnsafe
+  0.00      0.21     0.00        1     0.00     0.00  posixIoFinderImpl
+  0.00      0.21     0.00        1     0.00     0.00  posixOpen
+  0.00      0.21     0.00        1     0.00     0.00  pthreadMutexFree
+  0.00      0.21     0.00        1     0.00     0.00  robust_open
+  0.00      0.21     0.00        1     0.00     0.00  setupLookaside
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3AddDefaultValue
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3AnalysisLoad
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3BtreeClose
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3BtreeCommit
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3BtreeOpen
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3BtreeSetCacheSize
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3Close
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3ExprCoveredByIndex
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3ExprFunction
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3ExprListDup
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3Fts3HashClear
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3GetVarint32
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3KeyInfoAlloc
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3MPrintf
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3MemInit
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3ParseUri
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3RegisterPerConnectionBuiltinFunctions
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3ResolveSelfReference
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3RollbackAll
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3TwoPartName
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3ValueFree
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3VdbeAppendP4
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_close
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_enable_load_extension
+  0.00      0.21     0.00        1     0.00    69.97  sqlite3_exec
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_fileio_init
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_mprintf
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_open
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_os_init
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_shathree_init
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_sleep
+  0.00      0.21     0.00        1     0.00     0.00  sqlite3_sqlar_init
+  0.00      0.21     0.00        1     0.00     0.00  unixClose
+  0.00      0.21     0.00        1     0.00     0.00  unixFullPathname
+  0.00      0.21     0.00        1     0.00     0.00  unixOpen
+  0.00      0.21     0.00        1     0.00     0.00  vdbeSorterFlushThread
+  0.00      0.21     0.00        1     0.00     0.00  zipfileRegister
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 4.76% of 0.21 seconds
+
+index % time    self  children    called     name
+                0.00    0.20    2500/2500        process_input [3]
+[1]     92.9    0.00    0.20    2500         runOneSqlLine [1]
+                0.00    0.20    2500/2500        shell_exec [2]
+-----------------------------------------------
+                0.00    0.20    2500/2500        runOneSqlLine [1]
+[2]     92.9    0.00    0.20    2500         shell_exec [2]
+                0.00    0.09    2500/5002        sqlite3_step [5]
+                0.00    0.09    2500/2500        callback [6]
+                0.00    0.02    2500/2500        sqlite3_prepare_v2 <cycle 2> [202]
+                0.00    0.00    5000/17500       sqlite3_debug [50]
+                0.00    0.00    5000/15203       sqlite3_free [51]
+                0.00    0.00    2500/2500        sqlite3_sql [228]
+                0.00    0.00    2500/2503        sqlite3_finalize [146]
+                0.00    0.00    2500/5000        sqlite3_column_count [109]
+                0.00    0.00    2500/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                                                 <spontaneous>
+[3]     92.9    0.00    0.20                 process_input [3]
+                0.00    0.20    2500/2500        runOneSqlLine [1]
+                0.00    0.00    2502/2502        local_getline [148]
+                0.00    0.00    2501/2501        _all_whitespace [1639]
+                0.00    0.00    2500/2500        sqlite3_complete [226]
+                0.00    0.00    2500/2501        output_quoted_escaped_string [169]
+                0.00    0.00       1/1           do_meta_command [306]
+-----------------------------------------------
+                0.13    0.05    5002/5002        sqlite3_step [5]
+[4]     83.3    0.13    0.05    5002         sqlite3VdbeExec [4]
+                0.03    0.00 6250001/6250001     btreeParseCellPtr [7]
+                0.01    0.00 6327501/6327501     sqlite3BtreeNext [9]
+                0.01    0.00   82501/82501       btreeNext [10]
+                0.00    0.00 6250001/6250001     getCellInfo [21]
+                0.00    0.00 6250001/6250001     sqlite3VdbeSerialGet [22]
+                0.00    0.00   80001/80001       moveToLeftmost [32]
+                0.00    0.00    7502/57518       sqlite3VdbeMemGrow [35]
+                0.00    0.00    2501/2501        moveToRoot [168]
+                0.00    0.00    2501/2501        allocateCursor [160]
+                0.00    0.00    2501/2501        sqlite3BtreeCursor [179]
+                0.00    0.00    2501/2502        sqlite3BtreeBeginTrans [154]
+                0.00    0.00    2501/2506        sqlite3BtreeGetMeta [118]
+                0.00    0.00    2501/5005        sqlite3VdbeHalt [96]
+                0.00    0.00    2500/2500        sqlite3VdbeMemMakeWriteable [224]
+                0.00    0.00    2500/2500        sqlite3VdbeMemShallowCopy [225]
+                0.00    0.00       1/1           sqlite3GetVarint32 [332]
+-----------------------------------------------
+                0.00    0.00       2/5002        sqlite3_exec <cycle 2> [19]
+                0.00    0.09    2500/5002        callback [6]
+                0.00    0.09    2500/5002        shell_exec [2]
+[5]     83.3    0.00    0.18    5002         sqlite3_step [5]
+                0.13    0.05    5002/5002        sqlite3VdbeExec [4]
+                0.00    0.00    5002/5002        vdbeSafetyNotNull [103]
+-----------------------------------------------
+                0.00    0.09    2500/2500        shell_exec [2]
+[6]     41.7    0.00    0.09    2500         callback [6]
+                0.00    0.09    2500/5002        sqlite3_step [5]
+                0.00    0.00   12500/17500       sqlite3_debug [50]
+                0.00    0.00   10000/10003       columnName [75]
+                0.00    0.00   10000/10000       sqlite3_column_name [82]
+                0.00    0.00   10000/10000       sqlite3_column_type [83]
+                0.00    0.00   10000/10003       sqlite3_column_text [78]
+                0.00    0.00    2500/5000        sqlite3_column_count [109]
+                0.00    0.00    2500/2681        sqlite3Malloc [110]
+                0.00    0.00    2500/2500        sqlite3_malloc64 [227]
+                0.00    0.00    2500/2500        shell_callback [216]
+-----------------------------------------------
+                0.03    0.00 6250001/6250001     sqlite3VdbeExec [4]
+[7]     11.9    0.03    0.00 6250001         btreeParseCellPtr [7]
+-----------------------------------------------
+[8]      9.6    0.00    0.02    2500+30033   <cycle 2 as a whole> [8]
+                0.00    0.01    7503             memjrnlTruncate <cycle 2> [12]
+                0.00    0.01    2501             sqlite3Select <cycle 2> [14]
+                0.00    0.00       1             sqlite3_exec <cycle 2> [19]
+                0.00    0.00    2504             sqlite3LockAndPrepare <cycle 2> [129]
+                0.00    0.00    2504             sqlite3Prepare <cycle 2> [131]
+                0.00    0.00    2504             sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    2504             sqlite3ReadSchema <cycle 2> [132]
+                0.00    0.00    2501             sqlite3_prepare_v2 <cycle 2> [202]
+                0.00    0.00    2501             sqlite3SelectPrep <cycle 2> [190]
+                0.00    0.00    2501             selectExpander <cycle 2> [175]
+                0.00    0.00    2501             sqlite3LocateTable <cycle 2> [185]
+                0.00    0.00    2500             sqlite3Init <cycle 2> [222]
+                0.00    0.00       3             sqlite3InitCallback <cycle 2> [280]
+                0.00    0.00       3             sqlite3StartTable <cycle 2> [282]
+                0.00    0.00       2             sqlite3InitOne <cycle 2> [291]
+-----------------------------------------------
+                0.01    0.00 6327501/6327501     sqlite3VdbeExec [4]
+[9]      4.8    0.01    0.00 6327501         sqlite3BtreeNext [9]
+-----------------------------------------------
+                0.01    0.00   82501/82501       sqlite3VdbeExec [4]
+[10]     4.8    0.01    0.00   82501         btreeNext [10]
+                0.00    0.00   80000/85001       pcache1Unpin [29]
+                0.00    0.00   80000/85002       sqlite3PcacheRelease [28]
+                0.00    0.00   80000/82501       sqlite3PagerUnrefNotNull [31]
+                0.00    0.00   80000/80000       moveToParent [34]
+                0.00    0.00    2500/82501       getAndInitPage [30]
+                0.00    0.00    2500/80000       moveToChild [33]
+-----------------------------------------------
+                0.01    0.00   15006/15006       memjrnlTruncate <cycle 2> [12]
+[11]     4.8    0.01    0.00   15006         sqlite3WalkExprList [11]
+                0.00    0.00   20008/42513       walkExpr [37]
+-----------------------------------------------
+                                7503             sqlite3SelectPrep <cycle 2> [190]
+[12]     4.8    0.00    0.01    7503         memjrnlTruncate <cycle 2> [12]
+                0.01    0.00   15006/15006       sqlite3WalkExprList [11]
+                0.00    0.00    5000/42513       walkExpr [37]
+                0.00    0.00    2501/2501        sqlite3SelectWalkNoop [191]
+                0.00    0.00    2501/2501        resolveSelectStep [173]
+                0.00    0.00    2501/2501        selectAddSubqueryTypeInfo [174]
+                0.00    0.00    2501/2501        selectPopWith [177]
+                                2501             selectExpander <cycle 2> [175]
+-----------------------------------------------
+                                5000             sqlite3WhereExprUsage [13]
+                0.01    0.00    7500/7500        exprAnalyze [16]
+[13]     4.8    0.01    0.00    7500+5000    sqlite3WhereExprUsage [13]
+                                5000             sqlite3WhereExprUsage [13]
+-----------------------------------------------
+                                2501             sqlite3RunParser <cycle 2> [133]
+[14]     4.8    0.00    0.01    2501         sqlite3Select <cycle 2> [14]
+                0.00    0.01    2501/2501        sqlite3WhereBegin [15]
+                0.00    0.00   20006/20006       sqlite3VdbeMemSetStr [43]
+                0.00    0.00   20006/20006       sqlite3_result_text64 [44]
+                0.00    0.00   10003/10003       columnTypeImpl [76]
+                0.00    0.00    5002/5008        sqlite3VdbeCreate [92]
+                0.00    0.00    2501/2507        sqlite3AuthCheck [117]
+                0.00    0.00    2501/15009       sqlite3TableLock [54]
+                0.00    0.00    2501/2501        computeLimitRegisters [164]
+                0.00    0.00    2501/2501        selectInnerLoop [176]
+                0.00    0.00    2501/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2501/2501        whereInfoFree [207]
+                0.00    0.00    2501/2501        sqlite3WhereEnd [200]
+                0.00    0.00    2501/2501        sqlite3VdbeSetNumCols [197]
+                0.00    0.00       1/1           keyInfoFromExprList [310]
+                0.00    0.00       1/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00       1/7503        sqlite3VdbeChangeP4 [88]
+                0.00    0.00       1/1           sqlite3VdbeAppendP4 [342]
+                                2501             sqlite3SelectPrep <cycle 2> [190]
+-----------------------------------------------
+                0.00    0.01    2501/2501        sqlite3Select <cycle 2> [14]
+[15]     4.8    0.00    0.01    2501         sqlite3WhereBegin [15]
+                0.00    0.01    2500/2500        exprAnalyze [16]
+                0.00    0.00    7503/15009       sqlite3TableLock [54]
+                0.00    0.00    5002/7503        sqlite3VdbeChangeP4 [88]
+                0.00    0.00    2502/2502        wherePathSolver [159]
+                0.00    0.00    2501/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    2501/2501        sqlite3WhereSplit [201]
+                0.00    0.00    2501/2501        whereLoopAddBtree [208]
+                0.00    0.00    2501/2501        whereLoopAddOr [210]
+                0.00    0.00    2501/15051       whereLoopClear [52]
+                0.00    0.00    2501/5005        pragmaVtabBestIndex [93]
+                0.00    0.00    2501/2501        sqlite3CodeVerifySchema [180]
+                0.00    0.00    2501/15005       sqlite3VdbeComment [59]
+                0.00    0.00    2501/2501        sqlite3OpenTable [187]
+                0.00    0.00    2501/2503        sqlite3WhereFindTerm [145]
+                0.00    0.00    2501/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00    2501/2501        vdbeChangeP4Full [206]
+                0.00    0.00    2500/2500        whereClauseInsert [231]
+                0.00    0.00    2500/2500        sqlite3ExprIfFalse [221]
+-----------------------------------------------
+                0.00    0.01    2500/2500        sqlite3WhereBegin [15]
+[16]     4.8    0.00    0.01    2500         exprAnalyze [16]
+                0.01    0.00    7500/7500        sqlite3WhereExprUsage [13]
+                0.00    0.00    5000/5000        exprMightBeIndexed [106]
+-----------------------------------------------
+                                                 <spontaneous>
+[17]     4.8    0.01    0.00                 atexit [17]
+-----------------------------------------------
+                                                 <spontaneous>
+[18]     2.4    0.01    0.00                 btreeParseCellPtrNoPayload [18]
+-----------------------------------------------
+                                   1             sqlite3InitOne <cycle 2> [291]
+[19]     0.0    0.00    0.00       1         sqlite3_exec <cycle 2> [19]
+                0.00    0.00       2/5002        sqlite3_step [5]
+                0.00    0.00       3/10003       sqlite3_column_text [78]
+                0.00    0.00       3/10003       columnName [75]
+                0.00    0.00       1/2505        sqlite3SafetyCheckOk [122]
+                0.00    0.00       1/2504        sqlite3VdbeFinalize [136]
+                0.00    0.00       1/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       1/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00       1/47591       sqlite3DbMallocRaw [36]
+                                   1             sqlite3_prepare_v2 <cycle 2> [202]
+                                   1             sqlite3InitCallback <cycle 2> [280]
+-----------------------------------------------
+[20]     0.0    0.00    0.00    2521+10      <cycle 1 as a whole> [20]
+                0.00    0.00    2525+1           sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       5             sqlite3_vfs_register <cycle 1> [261]
+                0.00    0.00       1             sqlite3_os_init <cycle 1> [348]
+-----------------------------------------------
+                0.00    0.00 6250001/6250001     sqlite3VdbeExec [4]
+[21]     0.0    0.00    0.00 6250001         getCellInfo [21]
+-----------------------------------------------
+                0.00    0.00 6250001/6250001     sqlite3VdbeExec [4]
+[22]     0.0    0.00    0.00 6250001         sqlite3VdbeSerialGet [22]
+-----------------------------------------------
+                0.00    0.00       1/117637      sqlite3VdbeAppendP4 [342]
+                0.00    0.00       1/117637      sqlite3_exec <cycle 2> [19]
+                0.00    0.00       1/117637      sqlite3InitOne <cycle 2> [291]
+                0.00    0.00       2/117637      sqlite3AddDefaultValue [321]
+                0.00    0.00       3/117637      sqlite3SchemaClear [294]
+                0.00    0.00       6/117637      deleteTable [267]
+                0.00    0.00      15/117637      freeIndex [268]
+                0.00    0.00      66/117637      sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00    2500/117637      sqlite3VdbeDelete [135]
+                0.00    0.00    2500/117637      sqlite3ParserReset [130]
+                0.00    0.00    2500/117637      selectExpander <cycle 2> [175]
+                0.00    0.00    2501/117637      resolveP2Values [127]
+                0.00    0.00    2501/117637      sqlite3Select <cycle 2> [14]
+                0.00    0.00    2502/117637      sqlite3SrcListDelete [195]
+                0.00    0.00    2502/117637      wherePathSolver [159]
+                0.00    0.00    2504/117637      sqlite3VdbeFinalize [136]
+                0.00    0.00    5000/117637      sqlite3ExprDeleteNN [48]
+                0.00    0.00    5001/117637      whereInfoFree [207]
+                0.00    0.00    5005/117637      sqlite3VdbeClearObject [134]
+                0.00    0.00   10004/117637      clearSelect [163]
+                0.00    0.00   15005/117637      vdbeFreeOpArray [140]
+                0.00    0.00   25007/117637      exprListDeleteNN [89]
+                0.00    0.00   32510/117637      computeYMD_HMS [100]
+[23]     0.0    0.00    0.00  117637         sqlite3DbFreeNN [23]
+-----------------------------------------------
+                0.00    0.00       1/117622      sqlite3KeyInfoAlloc [333]
+                0.00    0.00       1/117622      sqlite3_exec <cycle 2> [19]
+                0.00    0.00       2/117622      sqlite3DbStrDup [290]
+                0.00    0.00      17/117622      sqlite3RunParser <cycle 2> [133]
+                0.00    0.00      54/117622      sqlite3DbMallocZero [235]
+                0.00    0.00    2500/117622      sqlite3PExpr [223]
+                0.00    0.00    2501/117622      sqlite3VdbeSetNumCols [197]
+                0.00    0.00    2501/117622      exprDup [166]
+                0.00    0.00    2501/117622      sqlite3DbReallocOrFree [87]
+                0.00    0.00    2501/117622      sqlite3SrcListAppend [192]
+                0.00    0.00    2501/117622      sqlite3SelectNew [189]
+                0.00    0.00    2501/117622      sqlite3WhereBegin [15]
+                0.00    0.00    2502/117622      wherePathSolver [159]
+                0.00    0.00    2504/117622      sqlite3TableLock [54]
+                0.00    0.00    2504/117622      sqlite3VdbeCreate [92]
+                0.00    0.00    7502/117622      sqlite3IdListAppend [61]
+                0.00    0.00    7505/117622      vdbeClrCopy [86]
+                0.00    0.00   15001/117622      sqlite3ExprAlloc [63]
+                0.00    0.00   15006/117622      strAccumFinishRealloc [56]
+                0.00    0.00   15007/117622      sqlite3DbStrNDup [57]
+                0.00    0.00   32510/117622      sqlite3VdbeMemGrow [35]
+[24]     0.0    0.00    0.00  117622         sqlite3DbMallocRawNN [24]
+-----------------------------------------------
+                0.00    0.00   85036/85036       getPageNormal [26]
+[25]     0.0    0.00    0.00   85036         sqlite3PcacheFetchFinish [25]
+-----------------------------------------------
+                0.00    0.00    2501/85002       btreeGetPage [161]
+                0.00    0.00   82501/85002       getAndInitPage [30]
+[26]     0.0    0.00    0.00   85002         getPageNormal [26]
+                0.00    0.00   85036/85036       sqlite3PcacheFetchFinish [25]
+                0.00    0.00   85002/85002       pcache1Fetch [27]
+                0.00    0.00      34/34          pcache1FetchStage2 [241]
+                0.00    0.00      34/34          pcacheFetchFinishWithInit [243]
+                0.00    0.00      34/2535        unixRead [114]
+-----------------------------------------------
+                0.00    0.00   85002/85002       getPageNormal [26]
+[27]     0.0    0.00    0.00   85002         pcache1Fetch [27]
+-----------------------------------------------
+                0.00    0.00    2501/85002       btreeReleaseAllCursorPages [162]
+                0.00    0.00    2501/85002       sqlite3PagerUnrefPageOne [97]
+                0.00    0.00   80000/85002       btreeNext [10]
+[28]     0.0    0.00    0.00   85002         sqlite3PcacheRelease [28]
+-----------------------------------------------
+                0.00    0.00    2500/85001       btreeReleaseAllCursorPages [162]
+                0.00    0.00    2501/85001       sqlite3PagerUnrefPageOne [97]
+                0.00    0.00   80000/85001       btreeNext [10]
+[29]     0.0    0.00    0.00   85001         pcache1Unpin [29]
+-----------------------------------------------
+                0.00    0.00    2500/82501       btreeNext [10]
+                0.00    0.00    2501/82501       moveToRoot [168]
+                0.00    0.00   77500/82501       moveToLeftmost [32]
+[30]     0.0    0.00    0.00   82501         getAndInitPage [30]
+                0.00    0.00   82501/85002       getPageNormal [26]
+                0.00    0.00      34/34          btreeInitPage [239]
+-----------------------------------------------
+                0.00    0.00    2501/82501       btreeReleaseAllCursorPages [162]
+                0.00    0.00   80000/82501       btreeNext [10]
+[31]     0.0    0.00    0.00   82501         sqlite3PagerUnrefNotNull [31]
+-----------------------------------------------
+                0.00    0.00   80001/80001       sqlite3VdbeExec [4]
+[32]     0.0    0.00    0.00   80001         moveToLeftmost [32]
+                0.00    0.00   77500/82501       getAndInitPage [30]
+                0.00    0.00   77500/80000       moveToChild [33]
+-----------------------------------------------
+                0.00    0.00    2500/80000       btreeNext [10]
+                0.00    0.00   77500/80000       moveToLeftmost [32]
+[33]     0.0    0.00    0.00   80000         moveToChild [33]
+-----------------------------------------------
+                0.00    0.00   80000/80000       btreeNext [10]
+[34]     0.0    0.00    0.00   80000         moveToParent [34]
+-----------------------------------------------
+                0.00    0.00    5002/57518       sqlite3VdbeMemStringify [196]
+                0.00    0.00    5002/57518       allocateCursor [160]
+                0.00    0.00    7502/57518       sqlite3VdbeExec [4]
+                0.00    0.00   40012/57518       sqlite3VdbeMemSetStr [43]
+[35]     0.0    0.00    0.00   57518         sqlite3VdbeMemGrow [35]
+                0.00    0.00   32510/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00   32510/47591       sqlite3DbMallocRaw [36]
+-----------------------------------------------
+                0.00    0.00       1/47591       sqlite3_exec <cycle 2> [19]
+                0.00    0.00       2/47591       sqlite3DbStrDup [290]
+                0.00    0.00      14/47591       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00      56/47591       sqlite3DbMallocZero [235]
+                0.00    0.00   15008/47591       strAccumFinishRealloc [56]
+                0.00    0.00   32510/47591       sqlite3VdbeMemGrow [35]
+[36]     0.0    0.00    0.00   47591         sqlite3DbMallocRaw [36]
+-----------------------------------------------
+                                7500             walkExpr [37]
+                0.00    0.00       1/42513       sqlite3AddDefaultValue [321]
+                0.00    0.00    5000/42513       memjrnlTruncate <cycle 2> [12]
+                0.00    0.00    5000/42513       sqlite3ExprCodeTemp [108]
+                0.00    0.00   12504/42513       sqlite3ResolveExprNames [72]
+                0.00    0.00   20008/42513       sqlite3WalkExprList [11]
+[37]     0.0    0.00    0.00   42513+7500    walkExpr [37]
+                0.00    0.00   35008/35008       sqlite3ExprWalkNoop [41]
+                0.00    0.00   17504/17504       resolveExprStep [49]
+                0.00    0.00    5001/5001        exprNodeIsConstant [104]
+                                7500             walkExpr [37]
+-----------------------------------------------
+                0.00    0.00       1/40223       sqlite3Close [327]
+                0.00    0.00      48/40223       sqlite3CreateFunc [236]
+                0.00    0.00      49/40223       sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00   40125/40223       sqlite3RunParser <cycle 2> [133]
+[38]     0.0    0.00    0.00   40223         sqlite3GetToken [38]
+                0.00    0.00    7549/15051       whereLoopClear [52]
+-----------------------------------------------
+                0.00    0.00   40024/40024       sqlite3VXPrintf [47]
+[39]     0.0    0.00    0.00   40024         sqlite3StrAccumAppend [39]
+-----------------------------------------------
+                0.00    0.00       1/40022       sqlite3Select <cycle 2> [14]
+                0.00    0.00    2500/40022       codeCompare [212]
+                0.00    0.00    2500/40022       codeInteger [213]
+                0.00    0.00    2500/40022       sqlite3ExprCodeExprList [182]
+                0.00    0.00    2501/40022       sqlite3WhereEnd [200]
+                0.00    0.00    2501/40022       selectInnerLoop [176]
+                0.00    0.00    2501/40022       sqlite3WhereBegin [15]
+                0.00    0.00    5002/40022       sqlite3VdbeAddOp4Int [102]
+                0.00    0.00    5005/40022       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    5008/40022       sqlite3VdbeCreate [92]
+                0.00    0.00   10003/40022       sqlite3ExprCodeGetColumnOfTable [77]
+[40]     0.0    0.00    0.00   40022         sqlite3VdbeAddOp3 [40]
+-----------------------------------------------
+                0.00    0.00   35008/35008       walkExpr [37]
+[41]     0.0    0.00    0.00   35008         sqlite3ExprWalkNoop [41]
+-----------------------------------------------
+                0.00    0.00   10003/20006       columnName [75]
+                0.00    0.00   10003/20006       sqlite3_column_text [78]
+[42]     0.0    0.00    0.00   20006         sqlite3ValueText [42]
+-----------------------------------------------
+                0.00    0.00   20006/20006       sqlite3Select <cycle 2> [14]
+[43]     0.0    0.00    0.00   20006         sqlite3VdbeMemSetStr [43]
+                0.00    0.00   40012/57518       sqlite3VdbeMemGrow [35]
+-----------------------------------------------
+                0.00    0.00   20006/20006       sqlite3Select <cycle 2> [14]
+[44]     0.0    0.00    0.00   20006         sqlite3_result_text64 [44]
+-----------------------------------------------
+                0.00    0.00   10000/20003       sqlite3_column_type [83]
+                0.00    0.00   10003/20003       sqlite3_column_text [78]
+[45]     0.0    0.00    0.00   20003         columnMallocFailure [45]
+-----------------------------------------------
+                0.00    0.00   10000/20003       sqlite3_column_type [83]
+                0.00    0.00   10003/20003       sqlite3_column_text [78]
+[46]     0.0    0.00    0.00   20003         columnMem [46]
+-----------------------------------------------
+                                2504             sqlite3VXPrintf [47]
+                0.00    0.00       2/17512       sqlite3_vmprintf [298]
+                0.00    0.00    2504/17512       sqlite3_snprintf [156]
+                0.00    0.00   15006/17512       sqlite3VMPrintf [58]
+[47]     0.0    0.00    0.00   17512+2504    sqlite3VXPrintf [47]
+                0.00    0.00   40024/40024       sqlite3StrAccumAppend [39]
+                                2504             sqlite3VXPrintf [47]
+-----------------------------------------------
+                                5001             sqlite3ExprDeleteNN [48]
+                0.00    0.00       1/17506       freeIndex [268]
+                0.00    0.00       1/17506       sqlite3AddDefaultValue [321]
+                0.00    0.00    2500/17506       clearSelect [163]
+                0.00    0.00   15004/17506       exprListDeleteNN [89]
+[48]     0.0    0.00    0.00   17506+5001    sqlite3ExprDeleteNN [48]
+                0.00    0.00    5000/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2502/10008       sqlite3ExprListDelete [70]
+                                5001             sqlite3ExprDeleteNN [48]
+-----------------------------------------------
+                0.00    0.00   17504/17504       walkExpr [37]
+[49]     0.0    0.00    0.00   17504         resolveExprStep [49]
+                0.00    0.00       1/10004       sqlite3IsRowid [73]
+-----------------------------------------------
+                0.00    0.00    5000/17500       shell_exec [2]
+                0.00    0.00   12500/17500       callback [6]
+[50]     0.0    0.00    0.00   17500         sqlite3_debug [50]
+-----------------------------------------------
+                0.00    0.00       1/15203       do_meta_command [306]
+                0.00    0.00       1/15203       pcache1EnforceMaxPage [264]
+                0.00    0.00       1/15203       vdbeSorterFlushThread [355]
+                0.00    0.00       1/15203       fts3Rehash [307]
+                0.00    0.00       1/15203       closeUnixFile [303]
+                0.00    0.00       1/15203       unixFullPathname [353]
+                0.00    0.00       1/15203       unixClose [352]
+                0.00    0.00       1/15203       sqlite3BtreeOpen [325]
+                0.00    0.00       1/15203       sqlite3Close [327]
+                0.00    0.00       1/15203       openDatabase [311]
+                0.00    0.00       2/15203       sqlite3HashInsert [233]
+                0.00    0.00       2/15203       pcache1Destroy [313]
+                0.00    0.00       2/15203       sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       2/15203       sqlite3AddDefaultValue [321]
+                0.00    0.00       3/15203       sqlite3VdbeClearObject [134]
+                0.00    0.00       3/15203       sqlite3SchemaClear [294]
+                0.00    0.00       3/15203       dbpageClose [304]
+                0.00    0.00       3/15203       sqlite3BtreeClose [323]
+                0.00    0.00       3/15203       sqlite3VdbeFinalize [136]
+                0.00    0.00       6/15203       deleteTable [267]
+                0.00    0.00       7/15203       sqlite3Fts3HashClear [331]
+                0.00    0.00      14/15203       pcache1FreePage [242]
+                0.00    0.00      15/15203       freeIndex [268]
+                0.00    0.00      52/15203       sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00      68/15203       sqlite3HashClear [253]
+                0.00    0.00    2502/15203       releaseAllSavepoints [152]
+                0.00    0.00    2504/15203       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    5000/15203       shell_exec [2]
+                0.00    0.00    5002/15203       sqlite3BtreeCloseCursor [178]
+[51]     0.0    0.00    0.00   15203         sqlite3_free [51]
+                0.00    0.00    2681/5399        sqlite3MemSize [90]
+                0.00    0.00    2681/10423       pthreadMutexEnter [67]
+                0.00    0.00    2681/2681        sqlite3MemFree [111]
+-----------------------------------------------
+                0.00    0.00    2501/15051       sqlite3WhereBegin [15]
+                0.00    0.00    5001/15051       whereInfoFree [207]
+                0.00    0.00    7549/15051       sqlite3GetToken [38]
+[52]     0.0    0.00    0.00   15051         whereLoopClear [52]
+                0.00    0.00    7502/12503       whereLoopClearUnion [65]
+-----------------------------------------------
+                0.00    0.00       3/15012       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    2504/15012       sqlite3TableLock [54]
+                0.00    0.00    5002/15012       sqlite3IdListAppend [61]
+                0.00    0.00    7503/15012       sqlite3DbReallocOrFree [87]
+[53]     0.0    0.00    0.00   15012         sqlite3DbRealloc [53]
+-----------------------------------------------
+                0.00    0.00    2501/15009       sqlite3OpenTable [187]
+                0.00    0.00    2501/15009       sqlite3Select <cycle 2> [14]
+                0.00    0.00    2504/15009       growOp3 [126]
+                0.00    0.00    7503/15009       sqlite3WhereBegin [15]
+[54]     0.0    0.00    0.00   15009         sqlite3TableLock [54]
+                0.00    0.00    7503/7503        sqlite3DbReallocOrFree [87]
+                0.00    0.00    2504/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    2504/15012       sqlite3DbRealloc [53]
+                0.00    0.00       3/67          dbMallocRawFinish [234]
+                0.00    0.00       3/5399        sqlite3MemSize [90]
+-----------------------------------------------
+                0.00    0.00       2/15008       sqlite3_vmprintf [298]
+                0.00    0.00   15006/15008       sqlite3VMPrintf [58]
+[55]     0.0    0.00    0.00   15008         sqlite3StrAccumFinish [55]
+-----------------------------------------------
+                0.00    0.00       2/15008       sqlite3_vmprintf [298]
+                0.00    0.00   15006/15008       sqlite3VMPrintf [58]
+[56]     0.0    0.00    0.00   15008         strAccumFinishRealloc [56]
+                0.00    0.00   15008/47591       sqlite3DbMallocRaw [36]
+                0.00    0.00   15006/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00       2/2681        sqlite3Malloc [110]
+-----------------------------------------------
+                0.00    0.00       1/15007       sqlite3AddDefaultValue [321]
+                0.00    0.00       3/15007       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    2500/15007       sqlite3Prepare <cycle 2> [131]
+                0.00    0.00    2503/15007       sqlite3NameFromToken [144]
+                0.00    0.00   10000/15007       sqlite3CollapseDatabaseArray [66]
+[57]     0.0    0.00    0.00   15007         sqlite3DbStrNDup [57]
+                0.00    0.00   15007/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00       2/67          dbMallocRawFinish [234]
+-----------------------------------------------
+                0.00    0.00       1/15006       sqlite3MPrintf [334]
+                0.00    0.00   15005/15006       vdbeVComment [60]
+[58]     0.0    0.00    0.00   15006         sqlite3VMPrintf [58]
+                0.00    0.00   15006/15008       strAccumFinishRealloc [56]
+                0.00    0.00   15006/15008       sqlite3StrAccumFinish [55]
+                0.00    0.00   15006/17512       sqlite3VXPrintf [47]
+-----------------------------------------------
+                0.00    0.00    2501/15005       sqlite3WhereBegin [15]
+                0.00    0.00    2501/15005       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00   10003/15005       sqlite3ExprCodeGetColumnOfTable [77]
+[59]     0.0    0.00    0.00   15005         sqlite3VdbeComment [59]
+                0.00    0.00   15005/15005       vdbeVComment [60]
+-----------------------------------------------
+                0.00    0.00   15005/15005       sqlite3VdbeComment [59]
+[60]     0.0    0.00    0.00   15005         vdbeVComment [60]
+                0.00    0.00   15005/15006       sqlite3VMPrintf [58]
+-----------------------------------------------
+                0.00    0.00    2500/15004       sqlite3ExprCodeAtInit [220]
+                0.00    0.00    2504/15004       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00   10000/15004       selectExpander <cycle 2> [175]
+[61]     0.0    0.00    0.00   15004         sqlite3IdListAppend [61]
+                0.00    0.00    7502/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    5002/15012       sqlite3DbRealloc [53]
+-----------------------------------------------
+                0.00    0.00    2500/15003       sqlite3ExprCode [219]
+                0.00    0.00    2500/15003       sqlite3ExprCodeTemp [108]
+                0.00    0.00   10003/15003       sqlite3ExprCodeExprList [182]
+[62]     0.0    0.00    0.00   15003         sqlite3ExprCodeTarget [62]
+                0.00    0.00   12503/12503       sqlite3ExprCodeGetColumn [64]
+                0.00    0.00    2500/2500        codeInteger [213]
+-----------------------------------------------
+                0.00    0.00       1/15001       sqlite3ExprFunction [329]
+                0.00    0.00    5000/15001       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00   10000/15001       sqlite3Expr [80]
+[63]     0.0    0.00    0.00   15001         sqlite3ExprAlloc [63]
+                0.00    0.00   15001/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    2500/2505        sqlite3GetInt32 [121]
+                0.00    0.00       1/67          dbMallocRawFinish [234]
+-----------------------------------------------
+                0.00    0.00   12503/12503       sqlite3ExprCodeTarget [62]
+[64]     0.0    0.00    0.00   12503         sqlite3ExprCodeGetColumn [64]
+                0.00    0.00   10003/10003       sqlite3ExprCodeGetColumnOfTable [77]
+                0.00    0.00   10003/10004       sqlite3IsRowid [73]
+-----------------------------------------------
+                0.00    0.00    5001/12503       vdbeClrCopy [86]
+                0.00    0.00    7502/12503       whereLoopClear [52]
+[65]     0.0    0.00    0.00   12503         whereLoopClearUnion [65]
+-----------------------------------------------
+                0.00    0.00       1/12502       sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00    2501/12502       sqlite3RunParser <cycle 2> [133]
+                0.00    0.00   10000/12502       selectExpander <cycle 2> [175]
+[66]     0.0    0.00    0.00   12502         sqlite3CollapseDatabaseArray [66]
+                0.00    0.00   10000/15007       sqlite3DbStrNDup [57]
+-----------------------------------------------
+                0.00    0.00       1/10423       sqlite3_sleep [350]
+                0.00    0.00       1/10423       unixClose [352]
+                0.00    0.00       2/10423       sqlite3_vfs_find [297]
+                0.00    0.00       2/10423       unixOpen [354]
+                0.00    0.00       5/10423       sqlite3_vfs_register <cycle 1> [261]
+                0.00    0.00      15/10423       pcache1Alloc [247]
+                0.00    0.00      15/10423       pcache1Free [246]
+                0.00    0.00      18/10423       sqlite3_initialize <cycle 1> [116]
+                0.00    0.00    2501/10423       unixLock [204]
+                0.00    0.00    2501/10423       closePendingFds [124]
+                0.00    0.00    2681/10423       sqlite3Malloc [110]
+                0.00    0.00    2681/10423       sqlite3_free [51]
+[67]     0.0    0.00    0.00   10423         pthreadMutexEnter [67]
+-----------------------------------------------
+                0.00    0.00       1/10421       pcache1EnforceMaxPage [264]
+                0.00    0.00       1/10421       pcache1Destroy [313]
+                0.00    0.00       1/10421       sqlite3_sleep [350]
+                0.00    0.00       1/10421       closeUnixFile [303]
+                0.00    0.00       1/10421       sqlite3BtreeOpen [325]
+                0.00    0.00       1/10421       sqlite3Close [327]
+                0.00    0.00       1/10421       openDatabase [311]
+                0.00    0.00       2/10421       sqlite3_vfs_find [297]
+                0.00    0.00       2/10421       unixClose [352]
+                0.00    0.00       2/10421       sqlite3AddDefaultValue [321]
+                0.00    0.00       2/10421       unixOpen [354]
+                0.00    0.00       3/10421       sqlite3VdbeClearObject [134]
+                0.00    0.00       3/10421       sqlite3SchemaClear [294]
+                0.00    0.00       3/10421       dbpageClose [304]
+                0.00    0.00       3/10421       sqlite3BtreeClose [323]
+                0.00    0.00       3/10421       sqlite3VdbeFinalize [136]
+                0.00    0.00       5/10421       sqlite3_vfs_register <cycle 1> [261]
+                0.00    0.00       6/10421       deleteTable [267]
+                0.00    0.00       7/10421       sqlite3Fts3HashClear [331]
+                0.00    0.00      14/10421       pcache1FreePage [242]
+                0.00    0.00      15/10421       pcache1Alloc [247]
+                0.00    0.00      15/10421       pcache1Free [246]
+                0.00    0.00      15/10421       freeIndex [268]
+                0.00    0.00      20/10421       sqlite3_initialize <cycle 1> [116]
+                0.00    0.00      52/10421       sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00      59/10421       sqlite3HashClear [253]
+                0.00    0.00    2500/10421       shell_exec [2]
+                0.00    0.00    2501/10421       unixLock [204]
+                0.00    0.00    2501/10421       closePendingFds [124]
+                0.00    0.00    2681/10421       sqlite3Malloc [110]
+[68]     0.0    0.00    0.00   10421         pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00   10016/10016       sqlite3VdbeMakeReady [137]
+[69]     0.0    0.00    0.00   10016         applyNumericAffinity [69]
+-----------------------------------------------
+                0.00    0.00       3/10008       deleteTable [267]
+                0.00    0.00    2502/10008       sqlite3ExprDeleteNN [48]
+                0.00    0.00    7503/10008       clearSelect [163]
+[70]     0.0    0.00    0.00   10008         sqlite3ExprListDelete [70]
+-----------------------------------------------
+                0.00    0.00       1/10006       unixOpen [354]
+                0.00    0.00       2/10006       sqlite3BtreeOpen [325]
+                0.00    0.00   10003/10006       columnTypeImpl [76]
+[71]     0.0    0.00    0.00   10006         sqlite3_uri_boolean [71]
+                0.00    0.00       3/3           sqlite3_uri_parameter [284]
+-----------------------------------------------
+                               10003             sqlite3ResolveExprNames [72]
+                0.00    0.00       1/10005       resolveOrderGroupBy [172]
+                0.00    0.00   10004/10005       resolveSelectStep [173]
+[72]     0.0    0.00    0.00   10005+10003   sqlite3ResolveExprNames [72]
+                0.00    0.00   12504/42513       walkExpr [37]
+                               10003             sqlite3ResolveExprNames [72]
+-----------------------------------------------
+                0.00    0.00       1/10004       resolveExprStep [49]
+                0.00    0.00   10003/10004       sqlite3ExprCodeGetColumn [64]
+[73]     0.0    0.00    0.00   10004         sqlite3IsRowid [73]
+-----------------------------------------------
+                0.00    0.00    2501/10004       closePendingFds [124]
+                0.00    0.00    7503/10004       unixLock [204]
+[74]     0.0    0.00    0.00   10004         unixFileLock [74]
+-----------------------------------------------
+                0.00    0.00       3/10003       sqlite3_exec <cycle 2> [19]
+                0.00    0.00   10000/10003       callback [6]
+[75]     0.0    0.00    0.00   10003         columnName [75]
+                0.00    0.00   10003/20006       sqlite3ValueText [42]
+                0.00    0.00   10003/10003       sqlite3_value_text [79]
+-----------------------------------------------
+                0.00    0.00   10003/10003       sqlite3Select <cycle 2> [14]
+[76]     0.0    0.00    0.00   10003         columnTypeImpl [76]
+                0.00    0.00   10003/10006       sqlite3_uri_boolean [71]
+-----------------------------------------------
+                0.00    0.00   10003/10003       sqlite3ExprCodeGetColumn [64]
+[77]     0.0    0.00    0.00   10003         sqlite3ExprCodeGetColumnOfTable [77]
+                0.00    0.00   10003/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00   10003/15005       sqlite3VdbeComment [59]
+                0.00    0.00    2500/2500        valueFromExpr.constprop.688 [230]
+-----------------------------------------------
+                0.00    0.00       3/10003       sqlite3_exec <cycle 2> [19]
+                0.00    0.00   10000/10003       callback [6]
+[78]     0.0    0.00    0.00   10003         sqlite3_column_text [78]
+                0.00    0.00   10003/20003       columnMem [46]
+                0.00    0.00   10003/20003       columnMallocFailure [45]
+                0.00    0.00   10003/20006       sqlite3ValueText [42]
+                0.00    0.00    2501/2501        valueToText [205]
+-----------------------------------------------
+                0.00    0.00   10003/10003       columnName [75]
+[79]     0.0    0.00    0.00   10003         sqlite3_value_text [79]
+-----------------------------------------------
+                0.00    0.00   10000/10000       selectExpander <cycle 2> [175]
+[80]     0.0    0.00    0.00   10000         sqlite3Expr [80]
+                0.00    0.00   10000/15001       sqlite3ExprAlloc [63]
+-----------------------------------------------
+                0.00    0.00    2500/10000       comparisonAffinity [214]
+                0.00    0.00    2500/10000       codeCompare [212]
+                0.00    0.00    5000/10000       sqlite3CompareAffinity [107]
+[81]     0.0    0.00    0.00   10000         sqlite3ExprAffinity [81]
+-----------------------------------------------
+                0.00    0.00   10000/10000       callback [6]
+[82]     0.0    0.00    0.00   10000         sqlite3_column_name [82]
+-----------------------------------------------
+                0.00    0.00   10000/10000       callback [6]
+[83]     0.0    0.00    0.00   10000         sqlite3_column_type [83]
+                0.00    0.00   10000/20003       columnMem [46]
+                0.00    0.00   10000/20003       columnMallocFailure [45]
+-----------------------------------------------
+                0.00    0.00      75/7579        sqlite3HashInsert [233]
+                0.00    0.00    2500/7579        whereLoopAddBtree [208]
+                0.00    0.00    5004/7579        wherePathSolver [159]
+[84]     0.0    0.00    0.00    7579         sqlite3LogEstAdd [84]
+-----------------------------------------------
+                0.00    0.00    7512/7512        sqlite3RunParser <cycle 2> [133]
+[85]     0.0    0.00    0.00    7512         yy_destructor [85]
+-----------------------------------------------
+                0.00    0.00    2504/7505        sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    5001/7505        whereLoopAddBtree [208]
+[86]     0.0    0.00    0.00    7505         vdbeClrCopy [86]
+                0.00    0.00    7505/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    5001/5001        whereLoopFindLesser [105]
+                0.00    0.00    5001/12503       whereLoopClearUnion [65]
+-----------------------------------------------
+                0.00    0.00    7503/7503        sqlite3TableLock [54]
+[87]     0.0    0.00    0.00    7503         sqlite3DbReallocOrFree [87]
+                0.00    0.00    7503/15012       sqlite3DbRealloc [53]
+                0.00    0.00    2501/117622      sqlite3DbMallocRawNN [24]
+-----------------------------------------------
+                0.00    0.00       1/7503        sqlite3Select <cycle 2> [14]
+                0.00    0.00    2500/7503        codeCompare [212]
+                0.00    0.00    5002/7503        sqlite3WhereBegin [15]
+[88]     0.0    0.00    0.00    7503         sqlite3VdbeChangeP4 [88]
+-----------------------------------------------
+                0.00    0.00    2500/7502        sqlite3ParserReset [130]
+                0.00    0.00    2500/7502        selectExpander <cycle 2> [175]
+                0.00    0.00    2502/7502        clearSelect [163]
+[89]     0.0    0.00    0.00    7502         exprListDeleteNN [89]
+                0.00    0.00   25007/117637      sqlite3DbFreeNN [23]
+                0.00    0.00   15004/17506       sqlite3ExprDeleteNN [48]
+-----------------------------------------------
+                0.00    0.00       1/5399        setupLookaside [320]
+                0.00    0.00       1/5399        pcache1FetchStage2 [241]
+                0.00    0.00       2/5399        sqlite3HashInsert [233]
+                0.00    0.00       3/5399        sqlite3TableLock [54]
+                0.00    0.00      15/5399        pcache1Alloc [247]
+                0.00    0.00      15/5399        pcache1Free [246]
+                0.00    0.00    2681/5399        sqlite3Malloc [110]
+                0.00    0.00    2681/5399        sqlite3_free [51]
+[90]     0.0    0.00    0.00    5399         sqlite3MemSize [90]
+-----------------------------------------------
+                0.00    0.00       3/5204        sqlite3FindIndex [278]
+                0.00    0.00      11/5204        findCollSeqEntry [252]
+                0.00    0.00      14/5204        createModule [249]
+                0.00    0.00      68/5204        sqlite3HashInsert [233]
+                0.00    0.00     103/5204        sqlite3FindFunction [232]
+                0.00    0.00    5005/5204        sqlite3FindTable [120]
+[91]     0.0    0.00    0.00    5204         findElementWithHash [91]
+-----------------------------------------------
+                0.00    0.00       6/5008        sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    5002/5008        sqlite3Select <cycle 2> [14]
+[92]     0.0    0.00    0.00    5008         sqlite3VdbeCreate [92]
+                0.00    0.00    5008/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00    2504/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    2504/2504        growOp3 [126]
+                0.00    0.00       3/67          dbMallocRawFinish [234]
+-----------------------------------------------
+                0.00    0.00       1/5005        sqlite3VdbeAppendP4 [342]
+                0.00    0.00       3/5005        sqlite3EndTable [275]
+                0.00    0.00    2500/5005        selectExpander <cycle 2> [175]
+                0.00    0.00    2501/5005        sqlite3WhereBegin [15]
+[93]     0.0    0.00    0.00    5005         pragmaVtabBestIndex [93]
+-----------------------------------------------
+                0.00    0.00    2501/5005        sqlite3BtreeBeginTrans [154]
+                0.00    0.00    2504/5005        sqlite3Prepare <cycle 2> [131]
+[94]     0.0    0.00    0.00    5005         querySharedCacheTableLock [94]
+-----------------------------------------------
+                0.00    0.00    2501/5005        sqlite3SrcListDelete [195]
+                0.00    0.00    2504/5005        sqlite3RunParser <cycle 2> [133]
+[95]     0.0    0.00    0.00    5005         sqlite3DeleteTable [95]
+-----------------------------------------------
+                0.00    0.00    2501/5005        sqlite3VdbeExec [4]
+                0.00    0.00    2504/5005        sqlite3VdbeReset [138]
+[96]     0.0    0.00    0.00    5005         sqlite3VdbeHalt [96]
+                0.00    0.00    2504/2504        sqlite3_close_v2 [139]
+                0.00    0.00    2501/5002        computeYMD_HMS [100]
+                0.00    0.00    2501/2503        btreeEndTransaction [141]
+                0.00    0.00    2501/2503        callFinaliser [142]
+-----------------------------------------------
+                0.00    0.00       2/5004        sqlite3BtreeRollback [289]
+                0.00    0.00    5002/5004        btreeEndTransaction [141]
+[97]     0.0    0.00    0.00    5004         sqlite3PagerUnrefPageOne [97]
+                0.00    0.00    2501/85001       pcache1Unpin [29]
+                0.00    0.00    2501/85002       sqlite3PcacheRelease [28]
+-----------------------------------------------
+                0.00    0.00    2501/5004        whereLoopAddBtreeIndex [209]
+                0.00    0.00    2503/5004        sqlite3WhereFindTerm [145]
+[98]     0.0    0.00    0.00    5004         whereScanInit [98]
+-----------------------------------------------
+                0.00    0.00    2501/5004        whereLoopAddBtreeIndex [209]
+                0.00    0.00    2503/5004        sqlite3WhereFindTerm [145]
+[99]     0.0    0.00    0.00    5004         whereScanNext [99]
+-----------------------------------------------
+                0.00    0.00    2501/5002        sqlite3VdbeClearObject [134]
+                0.00    0.00    2501/5002        sqlite3VdbeHalt [96]
+[100]    0.0    0.00    0.00    5002         computeYMD_HMS [100]
+                0.00    0.00   32510/117637      sqlite3DbFreeNN [23]
+-----------------------------------------------
+                0.00    0.00    2501/5002        whereLoopAddBtreeIndex [209]
+                0.00    0.00    2501/5002        whereLoopAddBtree [208]
+[101]    0.0    0.00    0.00    5002         invokeProfileCallback [101]
+-----------------------------------------------
+                0.00    0.00    2501/5002        sqlite3OpenTable [187]
+                0.00    0.00    2501/5002        sqlite3RunParser <cycle 2> [133]
+[102]    0.0    0.00    0.00    5002         sqlite3VdbeAddOp4Int [102]
+                0.00    0.00    5002/40022       sqlite3VdbeAddOp3 [40]
+-----------------------------------------------
+                0.00    0.00    5002/5002        sqlite3_step [5]
+[103]    0.0    0.00    0.00    5002         vdbeSafetyNotNull [103]
+-----------------------------------------------
+                0.00    0.00    5001/5001        walkExpr [37]
+[104]    0.0    0.00    0.00    5001         exprNodeIsConstant [104]
+-----------------------------------------------
+                0.00    0.00    5001/5001        vdbeClrCopy [86]
+[105]    0.0    0.00    0.00    5001         whereLoopFindLesser [105]
+-----------------------------------------------
+                0.00    0.00    5000/5000        exprAnalyze [16]
+[106]    0.0    0.00    0.00    5000         exprMightBeIndexed [106]
+-----------------------------------------------
+                0.00    0.00    2500/5000        termCanDriveIndex [229]
+                0.00    0.00    2500/5000        codeCompare [212]
+[107]    0.0    0.00    0.00    5000         sqlite3CompareAffinity [107]
+                0.00    0.00    5000/10000       sqlite3ExprAffinity [81]
+-----------------------------------------------
+                0.00    0.00    5000/5000        sqlite3ExprIfFalse [221]
+[108]    0.0    0.00    0.00    5000         sqlite3ExprCodeTemp [108]
+                0.00    0.00    5000/42513       walkExpr [37]
+                0.00    0.00    2500/15003       sqlite3ExprCodeTarget [62]
+                0.00    0.00    2500/2500        sqlite3ExprCodeAtInit [220]
+-----------------------------------------------
+                0.00    0.00    2500/5000        callback [6]
+                0.00    0.00    2500/5000        shell_exec [2]
+[109]    0.0    0.00    0.00    5000         sqlite3_column_count [109]
+-----------------------------------------------
+                0.00    0.00       1/2681        setupLookaside [320]
+                0.00    0.00       1/2681        pcache1FetchStage2 [241]
+                0.00    0.00       1/2681        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       1/2681        sqlite3ParseUri [336]
+                0.00    0.00       1/2681        sqlite3BtreeOpen [325]
+                0.00    0.00       1/2681        openDatabase [311]
+                0.00    0.00       2/2681        sqlite3DbMallocZero [235]
+                0.00    0.00       2/2681        strAccumFinishRealloc [56]
+                0.00    0.00       2/2681        unixOpen [354]
+                0.00    0.00       7/2681        sqlite3MallocZero [255]
+                0.00    0.00       7/2681        fts3MallocZero [254]
+                0.00    0.00      14/2681        sqlite3VtabCreateModule [251]
+                0.00    0.00      15/2681        pcache1Alloc [247]
+                0.00    0.00      59/2681        sqlite3HashInsert [233]
+                0.00    0.00      67/2681        dbMallocRawFinish [234]
+                0.00    0.00    2500/2681        callback [6]
+[110]    0.0    0.00    0.00    2681         sqlite3Malloc [110]
+                0.00    0.00    2681/2681        sqlite3MemRoundup [113]
+                0.00    0.00    2681/10423       pthreadMutexEnter [67]
+                0.00    0.00    2681/2681        sqlite3MemMalloc [112]
+                0.00    0.00    2681/5399        sqlite3MemSize [90]
+                0.00    0.00    2681/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00    2681/2681        sqlite3_free [51]
+[111]    0.0    0.00    0.00    2681         sqlite3MemFree [111]
+-----------------------------------------------
+                0.00    0.00    2681/2681        sqlite3Malloc [110]
+[112]    0.0    0.00    0.00    2681         sqlite3MemMalloc [112]
+-----------------------------------------------
+                0.00    0.00    2681/2681        sqlite3Malloc [110]
+[113]    0.0    0.00    0.00    2681         sqlite3MemRoundup [113]
+-----------------------------------------------
+                0.00    0.00       1/2535        sqlite3BtreeOpen [325]
+                0.00    0.00      34/2535        getPageNormal [26]
+                0.00    0.00    2500/2535        sqlite3PagerSharedLock [188]
+[114]    0.0    0.00    0.00    2535         unixRead [114]
+-----------------------------------------------
+                0.00    0.00      28/2531        sqlite3RunParser <cycle 2> [133]
+                0.00    0.00    2503/2531        sqlite3NameFromToken [144]
+[115]    0.0    0.00    0.00    2531         sqlite3Dequote [115]
+-----------------------------------------------
+                                   1             sqlite3_initialize <cycle 1> [116]
+                                   5             sqlite3_vfs_register <cycle 1> [261]
+                0.00    0.00       1/2521        arDotCommand [301]
+                0.00    0.00       1/2521        sqlite3ParseUri [336]
+                0.00    0.00       2/2521        sqlite3_vfs_find [297]
+                0.00    0.00       2/2521        sqlite3_vmprintf [298]
+                0.00    0.00       2/2521        sqlite3_mprintf [346]
+                0.00    0.00       2/2521        openDatabase [311]
+                0.00    0.00       3/2521        unixOpen [354]
+                0.00    0.00       7/2521        sqlite3_malloc [256]
+                0.00    0.00    2500/2521        sqlite3_malloc64 [227]
+[116]    0.0    0.00    0.00    2525+1       sqlite3_initialize <cycle 1> [116]
+                0.00    0.00      20/10421       pthreadMutexLeave [68]
+                0.00    0.00      18/10423       pthreadMutexEnter [67]
+                0.00    0.00       8/19          pthreadMutexAlloc [245]
+                0.00    0.00       6/6           pthreadMutexInit [258]
+                0.00    0.00       6/6           sqlite3MutexInit [259]
+                0.00    0.00       3/3           sqlite3InsertBuiltinFuncs [281]
+                0.00    0.00       2/15203       sqlite3_free [51]
+                0.00    0.00       2/2           sqlite3_config [296]
+                0.00    0.00       1/1           sqlite3MemInit [335]
+                0.00    0.00       1/1           pthreadMutexFree [318]
+                0.00    0.00       1/2681        sqlite3Malloc [110]
+                0.00    0.00       1/1           pcache1Init [314]
+                                   1             sqlite3_os_init <cycle 1> [348]
+                                   1             sqlite3_initialize <cycle 1> [116]
+-----------------------------------------------
+                0.00    0.00       6/2507        sqlite3StartTable <cycle 2> [282]
+                0.00    0.00    2501/2507        sqlite3Select <cycle 2> [14]
+[117]    0.0    0.00    0.00    2507         sqlite3AuthCheck [117]
+-----------------------------------------------
+                0.00    0.00       5/2506        sqlite3InitOne <cycle 2> [291]
+                0.00    0.00    2501/2506        sqlite3VdbeExec [4]
+[118]    0.0    0.00    0.00    2506         sqlite3BtreeGetMeta [118]
+-----------------------------------------------
+                0.00    0.00       1/2506        sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00       1/2506        sqlite3Close [327]
+                0.00    0.00    2504/2506        sqlite3Prepare <cycle 2> [131]
+[119]    0.0    0.00    0.00    2506         sqlite3VtabUnlockList [119]
+-----------------------------------------------
+                0.00    0.00       1/2505        sqlite3AnalysisLoad [322]
+                0.00    0.00       3/2505        sqlite3StartTable <cycle 2> [282]
+                0.00    0.00    2501/2505        sqlite3LocateTable <cycle 2> [185]
+[120]    0.0    0.00    0.00    2505         sqlite3FindTable [120]
+                0.00    0.00    5005/5204        findElementWithHash [91]
+                0.00    0.00       1/27          sqlite3ErrorFinish [244]
+-----------------------------------------------
+                0.00    0.00       2/2505        sqlite3AffinityType [250]
+                0.00    0.00       3/2505        sqlite3InitCallback <cycle 2> [280]
+                0.00    0.00    2500/2505        sqlite3ExprAlloc [63]
+[121]    0.0    0.00    0.00    2505         sqlite3GetInt32 [121]
+-----------------------------------------------
+                0.00    0.00       1/2505        sqlite3_exec <cycle 2> [19]
+                0.00    0.00    2504/2505        sqlite3LockAndPrepare <cycle 2> [129]
+[122]    0.0    0.00    0.00    2505         sqlite3SafetyCheckOk [122]
+-----------------------------------------------
+                0.00    0.00       1/2505        sqlite3BtreeOpen [325]
+                0.00    0.00       2/2505        setSectorSize [143]
+                0.00    0.00    2502/2505        pager_unlock [150]
+[123]    0.0    0.00    0.00    2505         unixDeviceCharacteristics [123]
+-----------------------------------------------
+                                2501             closePendingFds [124]
+                0.00    0.00       2/2504        unixClose [352]
+                0.00    0.00    2502/2504        pager_unlock [150]
+[124]    0.0    0.00    0.00    2504+2501    closePendingFds [124]
+                0.00    0.00    2501/10423       pthreadMutexEnter [67]
+                0.00    0.00    2501/10421       pthreadMutexLeave [68]
+                0.00    0.00    2501/10004       unixFileLock [74]
+                                2501             closePendingFds [124]
+-----------------------------------------------
+                0.00    0.00       2/2504        exprDup [166]
+                0.00    0.00    2502/2504        dupedExprSize [165]
+[125]    0.0    0.00    0.00    2504         dupedExprNodeSize [125]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3VdbeCreate [92]
+[126]    0.0    0.00    0.00    2504         growOp3 [126]
+                0.00    0.00    2504/15009       sqlite3TableLock [54]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3VdbeMakeReady [137]
+[127]    0.0    0.00    0.00    2504         resolveP2Values [127]
+                0.00    0.00    2501/117637      sqlite3DbFreeNN [23]
+-----------------------------------------------
+                0.00    0.00       1/2504        sqlite3Close [327]
+                0.00    0.00    2503/2504        sqlite3_finalize [146]
+[128]    0.0    0.00    0.00    2504         sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00      66/117637      sqlite3DbFreeNN [23]
+                0.00    0.00      52/10421       pthreadMutexLeave [68]
+                0.00    0.00      52/15203       sqlite3_free [51]
+                0.00    0.00      49/40223       sqlite3GetToken [38]
+                0.00    0.00       3/11          sqlite3HashClear [253]
+                0.00    0.00       1/1           sqlite3RollbackAll [339]
+                0.00    0.00       1/1           sqlite3BtreeClose [323]
+                0.00    0.00       1/2506        sqlite3VtabUnlockList [119]
+                0.00    0.00       1/2           sqlite3SchemaClear [294]
+                0.00    0.00       1/12502       sqlite3CollapseDatabaseArray [66]
+                0.00    0.00       1/1           hashDestroy [309]
+                0.00    0.00       1/1           sqlite3ValueFree [341]
+-----------------------------------------------
+                                   3             sqlite3InitCallback <cycle 2> [280]
+                                2501             sqlite3_prepare_v2 <cycle 2> [202]
+[129]    0.0    0.00    0.00    2504         sqlite3LockAndPrepare <cycle 2> [129]
+                0.00    0.00    2504/2505        sqlite3SafetyCheckOk [122]
+                0.00    0.00       1/1           btreeEnterAll [302]
+                                2504             sqlite3Prepare <cycle 2> [131]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3Prepare <cycle 2> [131]
+[130]    0.0    0.00    0.00    2504         sqlite3ParserReset [130]
+                0.00    0.00    2500/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2500/7502        exprListDeleteNN [89]
+-----------------------------------------------
+                                2504             sqlite3LockAndPrepare <cycle 2> [129]
+[131]    0.0    0.00    0.00    2504         sqlite3Prepare <cycle 2> [131]
+                0.00    0.00    2504/5005        querySharedCacheTableLock [94]
+                0.00    0.00    2504/2504        sqlite3ParserReset [130]
+                0.00    0.00    2504/2506        sqlite3VtabUnlockList [119]
+                0.00    0.00    2500/15007       sqlite3DbStrNDup [57]
+                                2504             sqlite3RunParser <cycle 2> [133]
+-----------------------------------------------
+                                   3             sqlite3StartTable <cycle 2> [282]
+                                2501             sqlite3LocateTable <cycle 2> [185]
+[132]    0.0    0.00    0.00    2504         sqlite3ReadSchema <cycle 2> [132]
+                                2500             sqlite3Init <cycle 2> [222]
+-----------------------------------------------
+                                2504             sqlite3Prepare <cycle 2> [131]
+[133]    0.0    0.00    0.00    2504         sqlite3RunParser <cycle 2> [133]
+                0.00    0.00   40125/40223       sqlite3GetToken [38]
+                0.00    0.00    7512/7512        yy_destructor [85]
+                0.00    0.00    5005/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00    5000/15001       sqlite3ExprAlloc [63]
+                0.00    0.00    2504/15203       sqlite3_free [51]
+                0.00    0.00    2504/5005        sqlite3DeleteTable [95]
+                0.00    0.00    2504/2504        sqlite3VdbeMakeReady [137]
+                0.00    0.00    2504/15004       sqlite3IdListAppend [61]
+                0.00    0.00    2504/7505        vdbeClrCopy [86]
+                0.00    0.00    2501/5002        sqlite3VdbeAddOp4Int [102]
+                0.00    0.00    2501/15005       sqlite3VdbeComment [59]
+                0.00    0.00    2501/2501        sqlite3SelectNew [189]
+                0.00    0.00    2501/2501        clearSelect [163]
+                0.00    0.00    2501/2501        sqlite3SrcListAppendFromTerm [193]
+                0.00    0.00    2501/12502       sqlite3CollapseDatabaseArray [66]
+                0.00    0.00    2500/2500        sqlite3ExprCode [219]
+                0.00    0.00    2500/2500        sqlite3PExpr [223]
+                0.00    0.00      28/2531        sqlite3Dequote [115]
+                0.00    0.00      26/27          sqlite3ErrorFinish [244]
+                0.00    0.00      17/67          dbMallocRawFinish [234]
+                0.00    0.00      17/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00      14/47591       sqlite3DbMallocRaw [36]
+                0.00    0.00      14/14          sqlite3AffinityType [250]
+                0.00    0.00       6/5008        sqlite3VdbeCreate [92]
+                0.00    0.00       3/3           sqlite3EndTable [275]
+                0.00    0.00       3/15012       sqlite3DbRealloc [53]
+                0.00    0.00       3/15007       sqlite3DbStrNDup [57]
+                0.00    0.00       3/4           sqlite3DbSpanDup [265]
+                0.00    0.00       1/1           sqlite3AddDefaultValue [321]
+                0.00    0.00       1/1           sqlite3ExprFunction [329]
+                                2501             sqlite3Select <cycle 2> [14]
+                                   3             sqlite3StartTable <cycle 2> [282]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3VdbeDelete [135]
+[134]    0.0    0.00    0.00    2504         sqlite3VdbeClearObject [134]
+                0.00    0.00    5005/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2504/2504        vdbeFreeOpArray [140]
+                0.00    0.00    2501/5002        computeYMD_HMS [100]
+                0.00    0.00       3/10421       pthreadMutexLeave [68]
+                0.00    0.00       3/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3VdbeFinalize [136]
+[135]    0.0    0.00    0.00    2504         sqlite3VdbeDelete [135]
+                0.00    0.00    2504/2504        sqlite3VdbeClearObject [134]
+                0.00    0.00    2500/117637      sqlite3DbFreeNN [23]
+-----------------------------------------------
+                0.00    0.00       1/2504        sqlite3_exec <cycle 2> [19]
+                0.00    0.00    2503/2504        sqlite3_finalize [146]
+[136]    0.0    0.00    0.00    2504         sqlite3VdbeFinalize [136]
+                0.00    0.00    2504/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2504/2504        sqlite3VdbeDelete [135]
+                0.00    0.00    2504/2504        sqlite3VdbeReset [138]
+                0.00    0.00       3/10421       pthreadMutexLeave [68]
+                0.00    0.00       3/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3RunParser <cycle 2> [133]
+[137]    0.0    0.00    0.00    2504         sqlite3VdbeMakeReady [137]
+                0.00    0.00   10016/10016       applyNumericAffinity [69]
+                0.00    0.00    2504/2504        resolveP2Values [127]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3VdbeFinalize [136]
+[138]    0.0    0.00    0.00    2504         sqlite3VdbeReset [138]
+                0.00    0.00    2504/5005        sqlite3VdbeHalt [96]
+                0.00    0.00    2501/2501        sqlite3VdbeTransferError [198]
+-----------------------------------------------
+                                2501             sqlite3_close_v2 [139]
+                0.00    0.00    2504/2504        sqlite3VdbeHalt [96]
+[139]    0.0    0.00    0.00    2504+2501    sqlite3_close_v2 [139]
+                0.00    0.00    2501/2501        sqlite3BtreeCloseCursor [178]
+                                2501             sqlite3_close_v2 [139]
+-----------------------------------------------
+                0.00    0.00    2504/2504        sqlite3VdbeClearObject [134]
+[140]    0.0    0.00    0.00    2504         vdbeFreeOpArray [140]
+                0.00    0.00   15005/117637      sqlite3DbFreeNN [23]
+-----------------------------------------------
+                                2501             btreeEndTransaction [141]
+                0.00    0.00       2/2503        sqlite3BtreeRollback [289]
+                0.00    0.00    2501/2503        sqlite3VdbeHalt [96]
+[141]    0.0    0.00    0.00    2503+2501    btreeEndTransaction [141]
+                0.00    0.00    5002/5004        sqlite3PagerUnrefPageOne [97]
+                0.00    0.00    2501/2502        pager_unlock [150]
+                0.00    0.00    2501/2502        pagerUnlockAndRollback [149]
+                                2501             btreeEndTransaction [141]
+-----------------------------------------------
+                0.00    0.00       1/2503        sqlite3RollbackAll [339]
+                0.00    0.00       1/2503        sqlite3Close [327]
+                0.00    0.00    2501/2503        sqlite3VdbeHalt [96]
+[142]    0.0    0.00    0.00    2503         callFinaliser [142]
+-----------------------------------------------
+                0.00    0.00       2/2503        sqlite3BtreeOpen [325]
+                0.00    0.00    2501/2503        sqlite3PagerSharedLock [188]
+[143]    0.0    0.00    0.00    2503         setSectorSize [143]
+                0.00    0.00    2501/2502        pcache1Truncate [151]
+                0.00    0.00       2/2505        unixDeviceCharacteristics [123]
+-----------------------------------------------
+                0.00    0.00       1/2503        sqlite3StartTable <cycle 2> [282]
+                0.00    0.00    2502/2503        sqlite3SrcListAppend [192]
+[144]    0.0    0.00    0.00    2503         sqlite3NameFromToken [144]
+                0.00    0.00    2503/2531        sqlite3Dequote [115]
+                0.00    0.00    2503/15007       sqlite3DbStrNDup [57]
+-----------------------------------------------
+                0.00    0.00       2/2503        wherePathSatisfiesOrderBy [300]
+                0.00    0.00    2501/2503        sqlite3WhereBegin [15]
+[145]    0.0    0.00    0.00    2503         sqlite3WhereFindTerm [145]
+                0.00    0.00    2503/5004        whereScanNext [99]
+                0.00    0.00    2503/5004        whereScanInit [98]
+-----------------------------------------------
+                0.00    0.00       3/2503        sqlite3InitCallback <cycle 2> [280]
+                0.00    0.00    2500/2503        shell_exec [2]
+[146]    0.0    0.00    0.00    2503         sqlite3_finalize [146]
+                0.00    0.00    2503/2504        sqlite3VdbeFinalize [136]
+                0.00    0.00    2503/2504        sqlite3LeaveMutexAndCloseZombie [128]
+-----------------------------------------------
+                0.00    0.00       1/2502        sqlite3VdbeAppendP4 [342]
+                0.00    0.00    2501/2502        vdbeChangeP4Full [206]
+[147]    0.0    0.00    0.00    2502         freeP4 [147]
+-----------------------------------------------
+                0.00    0.00    2502/2502        process_input [3]
+[148]    0.0    0.00    0.00    2502         local_getline [148]
+-----------------------------------------------
+                0.00    0.00       1/2502        dbpageClose [304]
+                0.00    0.00    2501/2502        btreeEndTransaction [141]
+[149]    0.0    0.00    0.00    2502         pagerUnlockAndRollback [149]
+                0.00    0.00    2501/2501        pager_end_transaction [171]
+-----------------------------------------------
+                0.00    0.00       1/2502        dbpageClose [304]
+                0.00    0.00    2501/2502        btreeEndTransaction [141]
+[150]    0.0    0.00    0.00    2502         pager_unlock [150]
+                0.00    0.00    2502/2502        sqlite3BitvecDestroy [153]
+                0.00    0.00    2502/2502        releaseAllSavepoints [152]
+                0.00    0.00    2502/2505        unixDeviceCharacteristics [123]
+                0.00    0.00    2502/2504        closePendingFds [124]
+                0.00    0.00    2502/2502        unixUnlock [158]
+-----------------------------------------------
+                0.00    0.00       1/2502        dbpageClose [304]
+                0.00    0.00    2501/2502        setSectorSize [143]
+[151]    0.0    0.00    0.00    2502         pcache1Truncate [151]
+                0.00    0.00    2501/2501        unixLock [204]
+                0.00    0.00       1/1           pcache1TruncateUnsafe [315]
+-----------------------------------------------
+                0.00    0.00    2502/2502        pager_unlock [150]
+[152]    0.0    0.00    0.00    2502         releaseAllSavepoints [152]
+                0.00    0.00    2502/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00    2502/2502        pager_unlock [150]
+[153]    0.0    0.00    0.00    2502         sqlite3BitvecDestroy [153]
+-----------------------------------------------
+                0.00    0.00       1/2502        sqlite3InitOne <cycle 2> [291]
+                0.00    0.00    2501/2502        sqlite3VdbeExec [4]
+[154]    0.0    0.00    0.00    2502         sqlite3BtreeBeginTrans [154]
+                0.00    0.00    2501/5005        querySharedCacheTableLock [94]
+                0.00    0.00    2501/2501        btreeGetPage [161]
+                0.00    0.00    2501/2501        sqlite3PagerSharedLock [188]
+-----------------------------------------------
+                0.00    0.00       1/2502        resolveOrderGroupBy [172]
+                0.00    0.00    2501/2502        selectExpander <cycle 2> [175]
+[155]    0.0    0.00    0.00    2502         sqlite3IndexedByLookup [155]
+-----------------------------------------------
+                0.00    0.00       1/2502        unixFullPathname [353]
+                0.00    0.00    2501/2502        sqlite3VdbeMemStringify [196]
+[156]    0.0    0.00    0.00    2502         sqlite3_snprintf [156]
+                0.00    0.00    2504/17512       sqlite3VXPrintf [47]
+-----------------------------------------------
+                0.00    0.00       1/2502        sqlite3BtreeOpen [325]
+                0.00    0.00    2501/2502        sqlite3PagerSharedLock [188]
+[157]    0.0    0.00    0.00    2502         unixAccess [157]
+                0.00    0.00       1/1           pcache1Create [312]
+                0.00    0.00       1/4           pcache1EnforceMaxPage [264]
+                0.00    0.00       1/3           pcache1Cachesize [271]
+-----------------------------------------------
+                0.00    0.00    2502/2502        pager_unlock [150]
+[158]    0.0    0.00    0.00    2502         unixUnlock [158]
+-----------------------------------------------
+                0.00    0.00    2502/2502        sqlite3WhereBegin [15]
+[159]    0.0    0.00    0.00    2502         wherePathSolver [159]
+                0.00    0.00    5004/7579        sqlite3LogEstAdd [84]
+                0.00    0.00    2502/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    2502/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       2/2           wherePathSatisfiesOrderBy [300]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3VdbeExec [4]
+[160]    0.0    0.00    0.00    2501         allocateCursor [160]
+                0.00    0.00    5002/57518       sqlite3VdbeMemGrow [35]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3BtreeBeginTrans [154]
+[161]    0.0    0.00    0.00    2501         btreeGetPage [161]
+                0.00    0.00    2501/85002       getPageNormal [26]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3BtreeCloseCursor [178]
+[162]    0.0    0.00    0.00    2501         btreeReleaseAllCursorPages [162]
+                0.00    0.00    2501/85002       sqlite3PcacheRelease [28]
+                0.00    0.00    2501/82501       sqlite3PagerUnrefNotNull [31]
+                0.00    0.00    2500/85001       pcache1Unpin [29]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3RunParser <cycle 2> [133]
+[163]    0.0    0.00    0.00    2501         clearSelect [163]
+                0.00    0.00   10004/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    7503/10008       sqlite3ExprListDelete [70]
+                0.00    0.00    2502/7502        exprListDeleteNN [89]
+                0.00    0.00    2501/2501        sqlite3SrcListDelete [195]
+                0.00    0.00    2500/17506       sqlite3ExprDeleteNN [48]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3Select <cycle 2> [14]
+[164]    0.0    0.00    0.00    2501         computeLimitRegisters [164]
+-----------------------------------------------
+                                   2             dupedExprSize [165]
+                0.00    0.00    2501/2501        exprDup [166]
+[165]    0.0    0.00    0.00    2501+2       dupedExprSize [165]
+                0.00    0.00    2502/2504        dupedExprNodeSize [125]
+                                   2             dupedExprSize [165]
+-----------------------------------------------
+                                   1             exprDup [166]
+                0.00    0.00       1/2501        sqlite3AddDefaultValue [321]
+                0.00    0.00    2500/2501        sqlite3ExprCodeAtInit [220]
+[166]    0.0    0.00    0.00    2501+1       exprDup [166]
+                0.00    0.00    2501/2501        dupedExprSize [165]
+                0.00    0.00    2501/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00       2/2504        dupedExprNodeSize [125]
+                0.00    0.00       1/1           sqlite3ExprListDup [330]
+                0.00    0.00       1/67          dbMallocRawFinish [234]
+                                   1             exprDup [166]
+-----------------------------------------------
+                0.00    0.00       1/2501        sqlite3ResolveSelfReference [338]
+                0.00    0.00    2500/2501        sqlite3PExpr [223]
+[167]    0.0    0.00    0.00    2501         exprSetHeight [167]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3VdbeExec [4]
+[168]    0.0    0.00    0.00    2501         moveToRoot [168]
+                0.00    0.00    2501/82501       getAndInitPage [30]
+-----------------------------------------------
+                0.00    0.00       1/2501        do_meta_command [306]
+                0.00    0.00    2500/2501        process_input [3]
+[169]    0.0    0.00    0.00    2501         output_quoted_escaped_string [169]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3PagerSharedLock [188]
+[170]    0.0    0.00    0.00    2501         pagerPagecount [170]
+                0.00    0.00    2501/2501        unixFileSize [203]
+-----------------------------------------------
+                0.00    0.00    2501/2501        pagerUnlockAndRollback [149]
+[171]    0.0    0.00    0.00    2501         pager_end_transaction [171]
+-----------------------------------------------
+                0.00    0.00    2501/2501        resolveSelectStep [173]
+[172]    0.0    0.00    0.00    2501         resolveOrderGroupBy [172]
+                0.00    0.00       3/3           sqlite3ExprCompare [276]
+                0.00    0.00       1/2502        sqlite3IndexedByLookup [155]
+                0.00    0.00       1/1           sqlite3ExprCoveredByIndex [328]
+                0.00    0.00       1/2501        sqlite3ExprIsInteger [184]
+                0.00    0.00       1/10005       sqlite3ResolveExprNames [72]
+-----------------------------------------------
+                0.00    0.00    2501/2501        memjrnlTruncate <cycle 2> [12]
+[173]    0.0    0.00    0.00    2501         resolveSelectStep [173]
+                0.00    0.00   10004/10005       sqlite3ResolveExprNames [72]
+                0.00    0.00    2501/2501        resolveOrderGroupBy [172]
+-----------------------------------------------
+                0.00    0.00    2501/2501        memjrnlTruncate <cycle 2> [12]
+[174]    0.0    0.00    0.00    2501         selectAddSubqueryTypeInfo [174]
+-----------------------------------------------
+                                2501             memjrnlTruncate <cycle 2> [12]
+[175]    0.0    0.00    0.00    2501         selectExpander <cycle 2> [175]
+                0.00    0.00   10000/10000       sqlite3Expr [80]
+                0.00    0.00   10000/15004       sqlite3IdListAppend [61]
+                0.00    0.00   10000/12502       sqlite3CollapseDatabaseArray [66]
+                0.00    0.00    2501/2501        sqlite3SrcListAssignCursors [194]
+                0.00    0.00    2501/2502        sqlite3IndexedByLookup [155]
+                0.00    0.00    2501/2501        sqlite3LocateTableItem [186]
+                0.00    0.00    2500/5005        pragmaVtabBestIndex [93]
+                0.00    0.00    2500/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2500/7502        exprListDeleteNN [89]
+                                2501             sqlite3LocateTable <cycle 2> [185]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3Select <cycle 2> [14]
+[176]    0.0    0.00    0.00    2501         selectInnerLoop [176]
+                0.00    0.00    2501/2501        sqlite3ExprCodeExprList [182]
+                0.00    0.00    2501/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00    2501/2501        sqlite3ExprCacheRemove [181]
+-----------------------------------------------
+                0.00    0.00    2501/2501        memjrnlTruncate <cycle 2> [12]
+[177]    0.0    0.00    0.00    2501         selectPopWith [177]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3_close_v2 [139]
+[178]    0.0    0.00    0.00    2501         sqlite3BtreeCloseCursor [178]
+                0.00    0.00    5002/15203       sqlite3_free [51]
+                0.00    0.00    2501/2501        btreeReleaseAllCursorPages [162]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3VdbeExec [4]
+[179]    0.0    0.00    0.00    2501         sqlite3BtreeCursor [179]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3WhereBegin [15]
+[180]    0.0    0.00    0.00    2501         sqlite3CodeVerifySchema [180]
+-----------------------------------------------
+                0.00    0.00    2501/2501        selectInnerLoop [176]
+[181]    0.0    0.00    0.00    2501         sqlite3ExprCacheRemove [181]
+-----------------------------------------------
+                0.00    0.00    2501/2501        selectInnerLoop [176]
+[182]    0.0    0.00    0.00    2501         sqlite3ExprCodeExprList [182]
+                0.00    0.00   10003/15003       sqlite3ExprCodeTarget [62]
+                0.00    0.00    2500/40022       sqlite3VdbeAddOp3 [40]
+-----------------------------------------------
+                0.00    0.00       1/2501        keyInfoFromExprList [310]
+                0.00    0.00    2500/2501        sqlite3BinaryCompareCollSeq [217]
+[183]    0.0    0.00    0.00    2501         sqlite3ExprCollSeq [183]
+-----------------------------------------------
+                0.00    0.00       1/2501        resolveOrderGroupBy [172]
+                0.00    0.00    2500/2501        whereLoopOutputAdjust [211]
+[184]    0.0    0.00    0.00    2501         sqlite3ExprIsInteger [184]
+-----------------------------------------------
+                                2501             selectExpander <cycle 2> [175]
+[185]    0.0    0.00    0.00    2501         sqlite3LocateTable <cycle 2> [185]
+                0.00    0.00    2501/2505        sqlite3FindTable [120]
+                                2501             sqlite3ReadSchema <cycle 2> [132]
+-----------------------------------------------
+                0.00    0.00    2501/2501        selectExpander <cycle 2> [175]
+[186]    0.0    0.00    0.00    2501         sqlite3LocateTableItem [186]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3WhereBegin [15]
+[187]    0.0    0.00    0.00    2501         sqlite3OpenTable [187]
+                0.00    0.00    2501/15009       sqlite3TableLock [54]
+                0.00    0.00    2501/5002        sqlite3VdbeAddOp4Int [102]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3BtreeBeginTrans [154]
+[188]    0.0    0.00    0.00    2501         sqlite3PagerSharedLock [188]
+                0.00    0.00    2501/2503        setSectorSize [143]
+                0.00    0.00    2501/2501        pagerPagecount [170]
+                0.00    0.00    2501/2502        unixAccess [157]
+                0.00    0.00    2500/2535        unixRead [114]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3RunParser <cycle 2> [133]
+[189]    0.0    0.00    0.00    2501         sqlite3SelectNew [189]
+                0.00    0.00    2501/117622      sqlite3DbMallocRawNN [24]
+-----------------------------------------------
+                                2501             sqlite3Select <cycle 2> [14]
+[190]    0.0    0.00    0.00    2501         sqlite3SelectPrep <cycle 2> [190]
+                                7503             memjrnlTruncate <cycle 2> [12]
+-----------------------------------------------
+                0.00    0.00    2501/2501        memjrnlTruncate <cycle 2> [12]
+[191]    0.0    0.00    0.00    2501         sqlite3SelectWalkNoop [191]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3SrcListAppendFromTerm [193]
+[192]    0.0    0.00    0.00    2501         sqlite3SrcListAppend [192]
+                0.00    0.00    2502/2503        sqlite3NameFromToken [144]
+                0.00    0.00    2501/117622      sqlite3DbMallocRawNN [24]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3RunParser <cycle 2> [133]
+[193]    0.0    0.00    0.00    2501         sqlite3SrcListAppendFromTerm [193]
+                0.00    0.00    2501/2501        sqlite3SrcListAppend [192]
+-----------------------------------------------
+                0.00    0.00    2501/2501        selectExpander <cycle 2> [175]
+[194]    0.0    0.00    0.00    2501         sqlite3SrcListAssignCursors [194]
+-----------------------------------------------
+                0.00    0.00    2501/2501        clearSelect [163]
+[195]    0.0    0.00    0.00    2501         sqlite3SrcListDelete [195]
+                0.00    0.00    2502/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    2501/5005        sqlite3DeleteTable [95]
+-----------------------------------------------
+                0.00    0.00    2501/2501        valueToText [205]
+[196]    0.0    0.00    0.00    2501         sqlite3VdbeMemStringify [196]
+                0.00    0.00    5002/57518       sqlite3VdbeMemGrow [35]
+                0.00    0.00    2501/2502        sqlite3_snprintf [156]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3Select <cycle 2> [14]
+[197]    0.0    0.00    0.00    2501         sqlite3VdbeSetNumCols [197]
+                0.00    0.00    2501/117622      sqlite3DbMallocRawNN [24]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3VdbeReset [138]
+[198]    0.0    0.00    0.00    2501         sqlite3VdbeTransferError [198]
+-----------------------------------------------
+                0.00    0.00    2501/2501        whereInfoFree [207]
+[199]    0.0    0.00    0.00    2501         sqlite3WhereClauseClear [199]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3Select <cycle 2> [14]
+[200]    0.0    0.00    0.00    2501         sqlite3WhereEnd [200]
+                0.00    0.00    2501/40022       sqlite3VdbeAddOp3 [40]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3WhereBegin [15]
+[201]    0.0    0.00    0.00    2501         sqlite3WhereSplit [201]
+-----------------------------------------------
+                                   1             sqlite3_exec <cycle 2> [19]
+                0.00    0.02    2500/2500        shell_exec [2]
+[202]    0.0    0.00    0.00    2501         sqlite3_prepare_v2 <cycle 2> [202]
+                                2501             sqlite3LockAndPrepare <cycle 2> [129]
+-----------------------------------------------
+                0.00    0.00    2501/2501        pagerPagecount [170]
+[203]    0.0    0.00    0.00    2501         unixFileSize [203]
+-----------------------------------------------
+                0.00    0.00    2501/2501        pcache1Truncate [151]
+[204]    0.0    0.00    0.00    2501         unixLock [204]
+                0.00    0.00    7503/10004       unixFileLock [74]
+                0.00    0.00    2501/10423       pthreadMutexEnter [67]
+                0.00    0.00    2501/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3_column_text [78]
+[205]    0.0    0.00    0.00    2501         valueToText [205]
+                0.00    0.00    2501/2501        sqlite3VdbeMemStringify [196]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3WhereBegin [15]
+[206]    0.0    0.00    0.00    2501         vdbeChangeP4Full [206]
+                0.00    0.00    2501/2502        freeP4 [147]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3Select <cycle 2> [14]
+[207]    0.0    0.00    0.00    2501         whereInfoFree [207]
+                0.00    0.00    5001/117637      sqlite3DbFreeNN [23]
+                0.00    0.00    5001/15051       whereLoopClear [52]
+                0.00    0.00    2501/2501        sqlite3WhereClauseClear [199]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3WhereBegin [15]
+[208]    0.0    0.00    0.00    2501         whereLoopAddBtree [208]
+                0.00    0.00    5001/7505        vdbeClrCopy [86]
+                0.00    0.00    2501/5002        invokeProfileCallback [101]
+                0.00    0.00    2501/2501        whereLoopOutputAdjust [211]
+                0.00    0.00    2501/2501        whereLoopAddBtreeIndex [209]
+                0.00    0.00    2500/2500        termCanDriveIndex [229]
+                0.00    0.00    2500/7579        sqlite3LogEstAdd [84]
+-----------------------------------------------
+                0.00    0.00    2501/2501        whereLoopAddBtree [208]
+[209]    0.0    0.00    0.00    2501         whereLoopAddBtreeIndex [209]
+                0.00    0.00    2501/5004        whereScanNext [99]
+                0.00    0.00    2501/5004        whereScanInit [98]
+                0.00    0.00    2501/5002        invokeProfileCallback [101]
+-----------------------------------------------
+                0.00    0.00    2501/2501        sqlite3WhereBegin [15]
+[210]    0.0    0.00    0.00    2501         whereLoopAddOr [210]
+-----------------------------------------------
+                0.00    0.00    2501/2501        whereLoopAddBtree [208]
+[211]    0.0    0.00    0.00    2501         whereLoopOutputAdjust [211]
+                0.00    0.00    2500/2501        sqlite3ExprIsInteger [184]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3ExprIfFalse [221]
+[212]    0.0    0.00    0.00    2500         codeCompare [212]
+                0.00    0.00    2500/2500        sqlite3BinaryCompareCollSeq [217]
+                0.00    0.00    2500/10000       sqlite3ExprAffinity [81]
+                0.00    0.00    2500/5000        sqlite3CompareAffinity [107]
+                0.00    0.00    2500/40022       sqlite3VdbeAddOp3 [40]
+                0.00    0.00    2500/7503        sqlite3VdbeChangeP4 [88]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3ExprCodeTarget [62]
+[213]    0.0    0.00    0.00    2500         codeInteger [213]
+                0.00    0.00    2500/40022       sqlite3VdbeAddOp3 [40]
+-----------------------------------------------
+                0.00    0.00    2500/2500        termCanDriveIndex [229]
+[214]    0.0    0.00    0.00    2500         comparisonAffinity [214]
+                0.00    0.00    2500/10000       sqlite3ExprAffinity [81]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3ExprIfFalse [221]
+[215]    0.0    0.00    0.00    2500         exprSrcCount [215]
+-----------------------------------------------
+                0.00    0.00    2500/2500        callback [6]
+[216]    0.0    0.00    0.00    2500         shell_callback [216]
+-----------------------------------------------
+                0.00    0.00    2500/2500        codeCompare [212]
+[217]    0.0    0.00    0.00    2500         sqlite3BinaryCompareCollSeq [217]
+                0.00    0.00    2500/2501        sqlite3ExprCollSeq [183]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3PExpr [223]
+[218]    0.0    0.00    0.00    2500         sqlite3ExprAttachSubtrees [218]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3RunParser <cycle 2> [133]
+[219]    0.0    0.00    0.00    2500         sqlite3ExprCode [219]
+                0.00    0.00    2500/15003       sqlite3ExprCodeTarget [62]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3ExprCodeTemp [108]
+[220]    0.0    0.00    0.00    2500         sqlite3ExprCodeAtInit [220]
+                0.00    0.00    2500/2501        exprDup [166]
+                0.00    0.00    2500/15004       sqlite3IdListAppend [61]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3WhereBegin [15]
+[221]    0.0    0.00    0.00    2500         sqlite3ExprIfFalse [221]
+                0.00    0.00    5000/5000        sqlite3ExprCodeTemp [108]
+                0.00    0.00    2500/2500        exprSrcCount [215]
+                0.00    0.00    2500/2500        codeCompare [212]
+-----------------------------------------------
+                                2500             sqlite3ReadSchema <cycle 2> [132]
+[222]    0.0    0.00    0.00    2500         sqlite3Init <cycle 2> [222]
+                                   2             sqlite3InitOne <cycle 2> [291]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3RunParser <cycle 2> [133]
+[223]    0.0    0.00    0.00    2500         sqlite3PExpr [223]
+                0.00    0.00    2500/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00    2500/2501        exprSetHeight [167]
+                0.00    0.00    2500/2500        sqlite3ExprAttachSubtrees [218]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3VdbeExec [4]
+[224]    0.0    0.00    0.00    2500         sqlite3VdbeMemMakeWriteable [224]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3VdbeExec [4]
+[225]    0.0    0.00    0.00    2500         sqlite3VdbeMemShallowCopy [225]
+-----------------------------------------------
+                0.00    0.00    2500/2500        process_input [3]
+[226]    0.0    0.00    0.00    2500         sqlite3_complete [226]
+-----------------------------------------------
+                0.00    0.00    2500/2500        callback [6]
+[227]    0.0    0.00    0.00    2500         sqlite3_malloc64 [227]
+                0.00    0.00    2500/2521        sqlite3_initialize <cycle 1> [116]
+-----------------------------------------------
+                0.00    0.00    2500/2500        shell_exec [2]
+[228]    0.0    0.00    0.00    2500         sqlite3_sql [228]
+-----------------------------------------------
+                0.00    0.00    2500/2500        whereLoopAddBtree [208]
+[229]    0.0    0.00    0.00    2500         termCanDriveIndex [229]
+                0.00    0.00    2500/5000        sqlite3CompareAffinity [107]
+                0.00    0.00    2500/2500        comparisonAffinity [214]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3ExprCodeGetColumnOfTable [77]
+[230]    0.0    0.00    0.00    2500         valueFromExpr.constprop.688 [230]
+-----------------------------------------------
+                0.00    0.00    2500/2500        sqlite3WhereBegin [15]
+[231]    0.0    0.00    0.00    2500         whereClauseInsert [231]
+-----------------------------------------------
+                0.00    0.00       7/103         sqlite3_overload_function [257]
+                0.00    0.00      96/103         sqlite3CreateFunc [236]
+[232]    0.0    0.00    0.00     103         sqlite3FindFunction [232]
+                0.00    0.00     103/5204        findElementWithHash [91]
+                0.00    0.00      48/56          sqlite3DbMallocZero [235]
+                0.00    0.00      48/68          sqlite3HashInsert [233]
+                0.00    0.00      43/43          matchQuality [237]
+-----------------------------------------------
+                0.00    0.00       3/68          findCollSeqEntry [252]
+                0.00    0.00       3/68          sqlite3EndTable [275]
+                0.00    0.00      14/68          sqlite3VtabCreateModule [251]
+                0.00    0.00      48/68          sqlite3FindFunction [232]
+[233]    0.0    0.00    0.00      68         sqlite3HashInsert [233]
+                0.00    0.00      75/7579        sqlite3LogEstAdd [84]
+                0.00    0.00      68/5204        findElementWithHash [91]
+                0.00    0.00      59/2681        sqlite3Malloc [110]
+                0.00    0.00       2/15203       sqlite3_free [51]
+                0.00    0.00       2/5399        sqlite3MemSize [90]
+-----------------------------------------------
+                0.00    0.00       1/67          sqlite3ExprAlloc [63]
+                0.00    0.00       1/67          exprDup [166]
+                0.00    0.00       2/67          sqlite3DbStrDup [290]
+                0.00    0.00       2/67          sqlite3DbStrNDup [57]
+                0.00    0.00       3/67          sqlite3TableLock [54]
+                0.00    0.00       3/67          sqlite3VdbeCreate [92]
+                0.00    0.00      17/67          sqlite3RunParser <cycle 2> [133]
+                0.00    0.00      38/67          sqlite3DbMallocZero [235]
+[234]    0.0    0.00    0.00      67         dbMallocRawFinish [234]
+                0.00    0.00      67/2681        sqlite3Malloc [110]
+-----------------------------------------------
+                0.00    0.00       1/56          sqlite3BtreeSchema [273]
+                0.00    0.00       1/56          sqlite3SchemaGet [295]
+                0.00    0.00       3/56          findCollSeqEntry [252]
+                0.00    0.00       3/56          sqlite3StartTable <cycle 2> [282]
+                0.00    0.00      48/56          sqlite3FindFunction [232]
+[235]    0.0    0.00    0.00      56         sqlite3DbMallocZero [235]
+                0.00    0.00      56/47591       sqlite3DbMallocRaw [36]
+                0.00    0.00      54/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00      38/67          dbMallocRawFinish [234]
+                0.00    0.00       2/2681        sqlite3Malloc [110]
+-----------------------------------------------
+                                   4             sqlite3CreateFunc [236]
+                0.00    0.00       7/44          sqlite3_overload_function [257]
+                0.00    0.00      37/44          sqlite3_create_function_v2 [238]
+[236]    0.0    0.00    0.00      44+4       sqlite3CreateFunc [236]
+                0.00    0.00      96/103         sqlite3FindFunction [232]
+                0.00    0.00      48/40223       sqlite3GetToken [38]
+                                   4             sqlite3CreateFunc [236]
+-----------------------------------------------
+                0.00    0.00      43/43          sqlite3FindFunction [232]
+[237]    0.0    0.00    0.00      43         matchQuality [237]
+-----------------------------------------------
+                0.00    0.00      15/37          sqlite3_create_function [248]
+                0.00    0.00      22/37          openDatabase [311]
+[238]    0.0    0.00    0.00      37         sqlite3_create_function_v2 [238]
+                0.00    0.00      37/44          sqlite3CreateFunc [236]
+-----------------------------------------------
+                0.00    0.00      34/34          getAndInitPage [30]
+[239]    0.0    0.00    0.00      34         btreeInitPage [239]
+                0.00    0.00      34/34          decodeFlags [240]
+-----------------------------------------------
+                0.00    0.00      34/34          btreeInitPage [239]
+[240]    0.0    0.00    0.00      34         decodeFlags [240]
+-----------------------------------------------
+                0.00    0.00      34/34          getPageNormal [26]
+[241]    0.0    0.00    0.00      34         pcache1FetchStage2 [241]
+                0.00    0.00      14/15          pcache1Alloc [247]
+                0.00    0.00       1/2681        sqlite3Malloc [110]
+                0.00    0.00       1/5399        sqlite3MemSize [90]
+-----------------------------------------------
+                0.00    0.00      34/34          pcache1TruncateUnsafe [315]
+[242]    0.0    0.00    0.00      34         pcache1FreePage [242]
+                0.00    0.00      14/10421       pthreadMutexLeave [68]
+                0.00    0.00      14/15203       sqlite3_free [51]
+                0.00    0.00      14/16          pcache1Free [246]
+-----------------------------------------------
+                0.00    0.00      34/34          getPageNormal [26]
+[243]    0.0    0.00    0.00      34         pcacheFetchFinishWithInit [243]
+-----------------------------------------------
+                0.00    0.00       1/27          sqlite3FindTable [120]
+                0.00    0.00      26/27          sqlite3RunParser <cycle 2> [133]
+[244]    0.0    0.00    0.00      27         sqlite3ErrorFinish [244]
+-----------------------------------------------
+                0.00    0.00       1/19          sqlite3_sleep [350]
+                0.00    0.00       1/19          sqlite3_os_init <cycle 1> [348]
+                0.00    0.00       2/19          pcache1Init [314]
+                0.00    0.00       2/19          sqlite3_vfs_find [297]
+                0.00    0.00       5/19          sqlite3_vfs_register <cycle 1> [261]
+                0.00    0.00       8/19          sqlite3_initialize <cycle 1> [116]
+[245]    0.0    0.00    0.00      19         pthreadMutexAlloc [245]
+                0.00    0.00       1/7           sqlite3MallocZero [255]
+-----------------------------------------------
+                0.00    0.00       1/16          sqlite3PagerSetPagesize [292]
+                0.00    0.00       1/16          dbpageClose [304]
+                0.00    0.00      14/16          pcache1FreePage [242]
+[246]    0.0    0.00    0.00      16         pcache1Free [246]
+                0.00    0.00      15/5399        sqlite3MemSize [90]
+                0.00    0.00      15/10423       pthreadMutexEnter [67]
+                0.00    0.00      15/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00       1/15          sqlite3PagerSetPagesize [292]
+                0.00    0.00      14/15          pcache1FetchStage2 [241]
+[247]    0.0    0.00    0.00      15         pcache1Alloc [247]
+                0.00    0.00      15/10421       pthreadMutexLeave [68]
+                0.00    0.00      15/2681        sqlite3Malloc [110]
+                0.00    0.00      15/5399        sqlite3MemSize [90]
+                0.00    0.00      15/10423       pthreadMutexEnter [67]
+-----------------------------------------------
+                0.00    0.00       1/15          zipfileRegister [356]
+                0.00    0.00       2/15          sqlite3_sqlar_init [351]
+                0.00    0.00       3/15          sqlite3_fileio_init [345]
+                0.00    0.00       4/15          sqlite3_shathree_init [349]
+                0.00    0.00       5/15          arDotCommand [301]
+[248]    0.0    0.00    0.00      15         sqlite3_create_function [248]
+                0.00    0.00      15/37          sqlite3_create_function_v2 [238]
+-----------------------------------------------
+                0.00    0.00       1/14          zipfileRegister [356]
+                0.00    0.00       2/14          arDotCommand [301]
+                0.00    0.00      11/14          openDatabase [311]
+[249]    0.0    0.00    0.00      14         createModule [249]
+                0.00    0.00      14/5204        findElementWithHash [91]
+                0.00    0.00      14/14          sqlite3VtabCreateModule [251]
+-----------------------------------------------
+                0.00    0.00      14/14          sqlite3RunParser <cycle 2> [133]
+[250]    0.0    0.00    0.00      14         sqlite3AffinityType [250]
+                0.00    0.00       2/2505        sqlite3GetInt32 [121]
+-----------------------------------------------
+                0.00    0.00      14/14          createModule [249]
+[251]    0.0    0.00    0.00      14         sqlite3VtabCreateModule [251]
+                0.00    0.00      14/2681        sqlite3Malloc [110]
+                0.00    0.00      14/68          sqlite3HashInsert [233]
+-----------------------------------------------
+                0.00    0.00       1/11          openDatabase [311]
+                0.00    0.00      10/11          createCollation [260]
+[252]    0.0    0.00    0.00      11         findCollSeqEntry [252]
+                0.00    0.00      11/5204        findElementWithHash [91]
+                0.00    0.00       3/56          sqlite3DbMallocZero [235]
+                0.00    0.00       3/68          sqlite3HashInsert [233]
+-----------------------------------------------
+                0.00    0.00       3/11          sqlite3LeaveMutexAndCloseZombie [128]
+                0.00    0.00       8/11          sqlite3SchemaClear [294]
+[253]    0.0    0.00    0.00      11         sqlite3HashClear [253]
+                0.00    0.00      68/15203       sqlite3_free [51]
+                0.00    0.00      59/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00       1/7           fts3Rehash [307]
+                0.00    0.00       6/7           sqlite3Fts3HashInsert [279]
+[254]    0.0    0.00    0.00       7         fts3MallocZero [254]
+                0.00    0.00       7/2681        sqlite3Malloc [110]
+                0.00    0.00       7/7           sqlite3_malloc [256]
+-----------------------------------------------
+                0.00    0.00       1/7           vdbeSorterFlushThread [355]
+                0.00    0.00       1/7           pcache1Create [312]
+                0.00    0.00       1/7           pthreadMutexAlloc [245]
+                0.00    0.00       1/7           openDatabase [311]
+                0.00    0.00       3/7           sqlite3BtreeOpen [325]
+[255]    0.0    0.00    0.00       7         sqlite3MallocZero [255]
+                0.00    0.00       7/2681        sqlite3Malloc [110]
+-----------------------------------------------
+                0.00    0.00       7/7           fts3MallocZero [254]
+[256]    0.0    0.00    0.00       7         sqlite3_malloc [256]
+                0.00    0.00       7/2521        sqlite3_initialize <cycle 1> [116]
+-----------------------------------------------
+                0.00    0.00       1/7           zipfileRegister [356]
+                0.00    0.00       1/7           sqlite3RegisterPerConnectionBuiltinFunctions [337]
+                0.00    0.00       5/7           openDatabase [311]
+[257]    0.0    0.00    0.00       7         sqlite3_overload_function [257]
+                0.00    0.00       7/103         sqlite3FindFunction [232]
+                0.00    0.00       7/44          sqlite3CreateFunc [236]
+-----------------------------------------------
+                0.00    0.00       6/6           sqlite3_initialize <cycle 1> [116]
+[258]    0.0    0.00    0.00       6         pthreadMutexInit [258]
+-----------------------------------------------
+                0.00    0.00       6/6           sqlite3_initialize <cycle 1> [116]
+[259]    0.0    0.00    0.00       6         sqlite3MutexInit [259]
+-----------------------------------------------
+                0.00    0.00       5/5           openDatabase [311]
+[260]    0.0    0.00    0.00       5         createCollation [260]
+                0.00    0.00      10/11          findCollSeqEntry [252]
+-----------------------------------------------
+                                   4             sqlite3_os_init <cycle 1> [348]
+                0.00    0.00       1/2521        sqlite3_appendvfs_init [1260]
+[261]    0.0    0.00    0.00       5         sqlite3_vfs_register <cycle 1> [261]
+                0.00    0.00       5/19          pthreadMutexAlloc [245]
+                0.00    0.00       5/5           vfsUnlink [263]
+                0.00    0.00       5/10423       pthreadMutexEnter [67]
+                0.00    0.00       5/10421       pthreadMutexLeave [68]
+                                   5             sqlite3_initialize <cycle 1> [116]
+-----------------------------------------------
+                0.00    0.00       2/5           sqlite3BtreeOpen [325]
+                0.00    0.00       3/5           unicodeDestroy [285]
+[262]    0.0    0.00    0.00       5         unixFileControl [262]
+-----------------------------------------------
+                0.00    0.00       5/5           sqlite3_vfs_register <cycle 1> [261]
+[263]    0.0    0.00    0.00       5         vfsUnlink [263]
+-----------------------------------------------
+                0.00    0.00       1/4           unixAccess [157]
+                0.00    0.00       1/4           pcache1Destroy [313]
+                0.00    0.00       1/4           sqlite3BtreeSetCacheSize [326]
+                0.00    0.00       1/4           sqlite3BtreeOpen [325]
+[264]    0.0    0.00    0.00       4         pcache1EnforceMaxPage [264]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+                0.00    0.00       1/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00       1/4           sqlite3AddDefaultValue [321]
+                0.00    0.00       3/4           sqlite3RunParser <cycle 2> [133]
+[265]    0.0    0.00    0.00       4         sqlite3DbSpanDup [265]
+-----------------------------------------------
+                0.00    0.00       1/4           arDotCommand [301]
+                0.00    0.00       3/4           openDatabase [311]
+[266]    0.0    0.00    0.00       4         sqlite3_errcode [266]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3SchemaClear [294]
+[267]    0.0    0.00    0.00       3         deleteTable [267]
+                0.00    0.00       6/10421       pthreadMutexLeave [68]
+                0.00    0.00       6/15203       sqlite3_free [51]
+                0.00    0.00       6/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       3/3           freeIndex [268]
+                0.00    0.00       3/10008       sqlite3ExprListDelete [70]
+-----------------------------------------------
+                0.00    0.00       3/3           deleteTable [267]
+[268]    0.0    0.00    0.00       3         freeIndex [268]
+                0.00    0.00      15/10421       pthreadMutexLeave [68]
+                0.00    0.00      15/15203       sqlite3_free [51]
+                0.00    0.00      15/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       1/17506       sqlite3ExprDeleteNN [48]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3Fts3HashInsert [279]
+[269]    0.0    0.00    0.00       3         fts3EvalNearTrim [269]
+                0.00    0.00       1/1           fts3StrCompare [308]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3Fts3HashInsert [279]
+[270]    0.0    0.00    0.00       3         fts3StrHash [270]
+-----------------------------------------------
+                0.00    0.00       1/3           unixAccess [157]
+                0.00    0.00       1/3           sqlite3BtreeSetCacheSize [326]
+                0.00    0.00       1/3           sqlite3BtreeOpen [325]
+[271]    0.0    0.00    0.00       3         pcache1Cachesize [271]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3InitCallback <cycle 2> [280]
+[272]    0.0    0.00    0.00       3         pragmaLocate [272]
+-----------------------------------------------
+                0.00    0.00       1/3           sqlite3SchemaGet [295]
+                0.00    0.00       1/3           sqlite3BtreeOpen [325]
+                0.00    0.00       1/3           sqlite3BtreeClose [323]
+[273]    0.0    0.00    0.00       3         sqlite3BtreeSchema [273]
+                0.00    0.00       1/56          sqlite3DbMallocZero [235]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3StartTable <cycle 2> [282]
+[274]    0.0    0.00    0.00       3         sqlite3CheckObjectName [274]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3RunParser <cycle 2> [133]
+[275]    0.0    0.00    0.00       3         sqlite3EndTable [275]
+                0.00    0.00       3/5005        pragmaVtabBestIndex [93]
+                0.00    0.00       3/68          sqlite3HashInsert [233]
+-----------------------------------------------
+                                   6             sqlite3ExprCompare [276]
+                0.00    0.00       3/3           resolveOrderGroupBy [172]
+[276]    0.0    0.00    0.00       3+6       sqlite3ExprCompare [276]
+                0.00    0.00       3/3           sqlite3ExprListCompare [277]
+                                   6             sqlite3ExprCompare [276]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3ExprCompare [276]
+[277]    0.0    0.00    0.00       3         sqlite3ExprListCompare [277]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3StartTable <cycle 2> [282]
+[278]    0.0    0.00    0.00       3         sqlite3FindIndex [278]
+                0.00    0.00       3/5204        findElementWithHash [91]
+-----------------------------------------------
+                0.00    0.00       3/3           openDatabase [311]
+[279]    0.0    0.00    0.00       3         sqlite3Fts3HashInsert [279]
+                0.00    0.00       6/7           fts3MallocZero [254]
+                0.00    0.00       3/3           fts3StrHash [270]
+                0.00    0.00       3/3           fts3EvalNearTrim [269]
+                0.00    0.00       1/1           fts3Rehash [307]
+-----------------------------------------------
+                                   1             sqlite3_exec <cycle 2> [19]
+                                   2             sqlite3InitOne <cycle 2> [291]
+[280]    0.0    0.00    0.00       3         sqlite3InitCallback <cycle 2> [280]
+                0.00    0.00       3/3           pragmaLocate [272]
+                0.00    0.00       3/2505        sqlite3GetInt32 [121]
+                0.00    0.00       3/2503        sqlite3_finalize [146]
+                                   3             sqlite3LockAndPrepare <cycle 2> [129]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3_initialize <cycle 1> [116]
+[281]    0.0    0.00    0.00       3         sqlite3InsertBuiltinFuncs [281]
+-----------------------------------------------
+                                   3             sqlite3RunParser <cycle 2> [133]
+[282]    0.0    0.00    0.00       3         sqlite3StartTable <cycle 2> [282]
+                0.00    0.00       6/2507        sqlite3AuthCheck [117]
+                0.00    0.00       3/3           sqlite3CheckObjectName [274]
+                0.00    0.00       3/56          sqlite3DbMallocZero [235]
+                0.00    0.00       3/2505        sqlite3FindTable [120]
+                0.00    0.00       3/3           sqlite3FindIndex [278]
+                0.00    0.00       2/2           sqlite3DbStrDup [290]
+                0.00    0.00       1/1           sqlite3TwoPartName [340]
+                0.00    0.00       1/2503        sqlite3NameFromToken [144]
+                                   3             sqlite3ReadSchema <cycle 2> [132]
+-----------------------------------------------
+                0.00    0.00       1/3           zipfileRegister [356]
+                0.00    0.00       2/3           arDotCommand [301]
+[283]    0.0    0.00    0.00       3         sqlite3_create_module [283]
+-----------------------------------------------
+                0.00    0.00       3/3           sqlite3_uri_boolean [71]
+[284]    0.0    0.00    0.00       3         sqlite3_uri_parameter [284]
+-----------------------------------------------
+                0.00    0.00       1/3           sqlite3BtreeOpen [325]
+                0.00    0.00       2/3           sqlite3PagerSetPagesize [292]
+[285]    0.0    0.00    0.00       3         unicodeDestroy [285]
+                0.00    0.00       3/5           unixFileControl [262]
+-----------------------------------------------
+                0.00    0.00       1/2           sqlite3PagerSetPagesize [292]
+                0.00    0.00       1/2           dbpageClose [304]
+[286]    0.0    0.00    0.00       2         pager_reset [286]
+-----------------------------------------------
+                0.00    0.00       2/2           do_meta_command [306]
+[287]    0.0    0.00    0.00       2         resolve_backslashes [287]
+-----------------------------------------------
+                0.00    0.00       2/2           sqlite3BtreeRollback [289]
+[288]    0.0    0.00    0.00       2         saveCursorsOnList [288]
+-----------------------------------------------
+                0.00    0.00       1/2           sqlite3RollbackAll [339]
+                0.00    0.00       1/2           sqlite3BtreeClose [323]
+[289]    0.0    0.00    0.00       2         sqlite3BtreeRollback [289]
+                0.00    0.00       2/5004        sqlite3PagerUnrefPageOne [97]
+                0.00    0.00       2/2503        btreeEndTransaction [141]
+                0.00    0.00       2/2           saveCursorsOnList [288]
+-----------------------------------------------
+                0.00    0.00       2/2           sqlite3StartTable <cycle 2> [282]
+[290]    0.0    0.00    0.00       2         sqlite3DbStrDup [290]
+                0.00    0.00       2/67          dbMallocRawFinish [234]
+                0.00    0.00       2/117622      sqlite3DbMallocRawNN [24]
+                0.00    0.00       2/47591       sqlite3DbMallocRaw [36]
+-----------------------------------------------
+                                   2             sqlite3Init <cycle 2> [222]
+[291]    0.0    0.00    0.00       2         sqlite3InitOne <cycle 2> [291]
+                0.00    0.00       5/2506        sqlite3BtreeGetMeta [118]
+                0.00    0.00       1/1           sqlite3BtreeSetCacheSize [326]
+                0.00    0.00       1/1           sqlite3MPrintf [334]
+                0.00    0.00       1/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       1/2502        sqlite3BtreeBeginTrans [154]
+                0.00    0.00       1/1           sqlite3AnalysisLoad [322]
+                0.00    0.00       1/1           sqlite3BtreeCommit [324]
+                                   2             sqlite3InitCallback <cycle 2> [280]
+                                   1             sqlite3_exec <cycle 2> [19]
+-----------------------------------------------
+                0.00    0.00       2/2           sqlite3BtreeOpen [325]
+[292]    0.0    0.00    0.00       2         sqlite3PagerSetPagesize [292]
+                0.00    0.00       2/3           unicodeDestroy [285]
+                0.00    0.00       1/15          pcache1Alloc [247]
+                0.00    0.00       1/2           sqlite3PcacheTruncate [293]
+                0.00    0.00       1/2           pager_reset [286]
+                0.00    0.00       1/16          pcache1Free [246]
+-----------------------------------------------
+                0.00    0.00       1/2           sqlite3PagerSetPagesize [292]
+                0.00    0.00       1/2           dbpageClose [304]
+[293]    0.0    0.00    0.00       2         sqlite3PcacheTruncate [293]
+-----------------------------------------------
+                0.00    0.00       1/2           sqlite3BtreeClose [323]
+                0.00    0.00       1/2           sqlite3LeaveMutexAndCloseZombie [128]
+[294]    0.0    0.00    0.00       2         sqlite3SchemaClear [294]
+                0.00    0.00       8/11          sqlite3HashClear [253]
+                0.00    0.00       3/10421       pthreadMutexLeave [68]
+                0.00    0.00       3/15203       sqlite3_free [51]
+                0.00    0.00       3/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       3/3           deleteTable [267]
+-----------------------------------------------
+                0.00    0.00       2/2           openDatabase [311]
+[295]    0.0    0.00    0.00       2         sqlite3SchemaGet [295]
+                0.00    0.00       1/3           sqlite3BtreeSchema [273]
+                0.00    0.00       1/56          sqlite3DbMallocZero [235]
+-----------------------------------------------
+                0.00    0.00       2/2           sqlite3_initialize <cycle 1> [116]
+[296]    0.0    0.00    0.00       2         sqlite3_config [296]
+-----------------------------------------------
+                0.00    0.00       1/2           sqlite3_appendvfs_init [1260]
+                0.00    0.00       1/2           sqlite3ParseUri [336]
+[297]    0.0    0.00    0.00       2         sqlite3_vfs_find [297]
+                0.00    0.00       2/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       2/19          pthreadMutexAlloc [245]
+                0.00    0.00       2/10423       pthreadMutexEnter [67]
+                0.00    0.00       2/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00       2/2           sqlite3_mprintf [346]
+[298]    0.0    0.00    0.00       2         sqlite3_vmprintf [298]
+                0.00    0.00       2/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       2/17512       sqlite3VXPrintf [47]
+                0.00    0.00       2/15008       strAccumFinishRealloc [56]
+                0.00    0.00       2/15008       sqlite3StrAccumFinish [55]
+-----------------------------------------------
+                0.00    0.00       1/2           unixClose [352]
+                0.00    0.00       1/2           unixOpen [354]
+[299]    0.0    0.00    0.00       2         verifyDbFile [299]
+-----------------------------------------------
+                0.00    0.00       2/2           wherePathSolver [159]
+[300]    0.0    0.00    0.00       2         wherePathSatisfiesOrderBy [300]
+                0.00    0.00       2/2503        sqlite3WhereFindTerm [145]
+-----------------------------------------------
+                0.00    0.00       1/1           do_meta_command [306]
+[301]    0.0    0.00    0.00       1         arDotCommand [301]
+                0.00    0.00       5/15          sqlite3_create_function [248]
+                0.00    0.00       2/14          createModule [249]
+                0.00    0.00       2/3           sqlite3_create_module [283]
+                0.00    0.00       1/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       1/1           openDatabase [311]
+                0.00    0.00       1/1           sqlite3_open [347]
+                0.00    0.00       1/4           sqlite3_errcode [266]
+                0.00    0.00       1/1           sqlite3_enable_load_extension [344]
+                0.00    0.00       1/1           sqlite3_fileio_init [345]
+                0.00    0.00       1/1           sqlite3_shathree_init [349]
+                0.00    0.00       1/1           sqlite3_sqlar_init [351]
+                0.00    0.00       1/1           zipfileRegister [356]
+                0.00    0.00       1/1           deduceDatabaseType [305]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3LockAndPrepare <cycle 2> [129]
+[302]    0.0    0.00    0.00       1         btreeEnterAll [302]
+-----------------------------------------------
+                0.00    0.00       1/1           unixClose [352]
+[303]    0.0    0.00    0.00       1         closeUnixFile [303]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+                0.00    0.00       1/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3BtreeClose [323]
+[304]    0.0    0.00    0.00       1         dbpageClose [304]
+                0.00    0.00       3/10421       pthreadMutexLeave [68]
+                0.00    0.00       3/15203       sqlite3_free [51]
+                0.00    0.00       1/2502        pcache1Truncate [151]
+                0.00    0.00       1/2           sqlite3PcacheTruncate [293]
+                0.00    0.00       1/2           pager_reset [286]
+                0.00    0.00       1/2502        pager_unlock [150]
+                0.00    0.00       1/2502        pagerUnlockAndRollback [149]
+                0.00    0.00       1/1           unixClose [352]
+                0.00    0.00       1/16          pcache1Free [246]
+                0.00    0.00       1/1           pcache1Destroy [313]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[305]    0.0    0.00    0.00       1         deduceDatabaseType [305]
+-----------------------------------------------
+                0.00    0.00       1/1           process_input [3]
+[306]    0.0    0.00    0.00       1         do_meta_command [306]
+                0.00    0.00       2/2           resolve_backslashes [287]
+                0.00    0.00       1/2501        output_quoted_escaped_string [169]
+                0.00    0.00       1/1           sqlite3Close [327]
+                0.00    0.00       1/1           sqlite3_close [343]
+                0.00    0.00       1/15203       sqlite3_free [51]
+                0.00    0.00       1/1           sqlite3_mprintf [346]
+                0.00    0.00       1/1           arDotCommand [301]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3Fts3HashInsert [279]
+[307]    0.0    0.00    0.00       1         fts3Rehash [307]
+                0.00    0.00       1/7           fts3MallocZero [254]
+                0.00    0.00       1/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00       1/1           fts3EvalNearTrim [269]
+[308]    0.0    0.00    0.00       1         fts3StrCompare [308]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3LeaveMutexAndCloseZombie [128]
+[309]    0.0    0.00    0.00       1         hashDestroy [309]
+                0.00    0.00       1/1           sqlite3Fts3HashClear [331]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3Select <cycle 2> [14]
+[310]    0.0    0.00    0.00       1         keyInfoFromExprList [310]
+                0.00    0.00       1/1           sqlite3KeyInfoAlloc [333]
+                0.00    0.00       1/2501        sqlite3ExprCollSeq [183]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[311]    0.0    0.00    0.00       1         openDatabase [311]
+                0.00    0.00      22/37          sqlite3_create_function_v2 [238]
+                0.00    0.00      11/14          createModule [249]
+                0.00    0.00       5/5           createCollation [260]
+                0.00    0.00       5/7           sqlite3_overload_function [257]
+                0.00    0.00       3/4           sqlite3_errcode [266]
+                0.00    0.00       3/3           sqlite3Fts3HashInsert [279]
+                0.00    0.00       2/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       2/2           sqlite3SchemaGet [295]
+                0.00    0.00       1/7           sqlite3MallocZero [255]
+                0.00    0.00       1/11          findCollSeqEntry [252]
+                0.00    0.00       1/1           sqlite3ParseUri [336]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+                0.00    0.00       1/15203       sqlite3_free [51]
+                0.00    0.00       1/1           sqlite3BtreeOpen [325]
+                0.00    0.00       1/1           sqlite3RegisterPerConnectionBuiltinFunctions [337]
+                0.00    0.00       1/1           setupLookaside [320]
+                0.00    0.00       1/2681        sqlite3Malloc [110]
+-----------------------------------------------
+                0.00    0.00       1/1           unixAccess [157]
+[312]    0.0    0.00    0.00       1         pcache1Create [312]
+                0.00    0.00       1/7           sqlite3MallocZero [255]
+                0.00    0.00       1/1           vdbeSorterFlushThread [355]
+-----------------------------------------------
+                0.00    0.00       1/1           dbpageClose [304]
+[313]    0.0    0.00    0.00       1         pcache1Destroy [313]
+                0.00    0.00       2/15203       sqlite3_free [51]
+                0.00    0.00       1/4           pcache1EnforceMaxPage [264]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3_initialize <cycle 1> [116]
+[314]    0.0    0.00    0.00       1         pcache1Init [314]
+                0.00    0.00       2/19          pthreadMutexAlloc [245]
+-----------------------------------------------
+                0.00    0.00       1/1           pcache1Truncate [151]
+[315]    0.0    0.00    0.00       1         pcache1TruncateUnsafe [315]
+                0.00    0.00      34/34          pcache1FreePage [242]
+-----------------------------------------------
+                0.00    0.00       1/1           unixOpen [354]
+[316]    0.0    0.00    0.00       1         posixIoFinderImpl [316]
+-----------------------------------------------
+                0.00    0.00       1/1           robust_open [319]
+[317]    0.0    0.00    0.00       1         posixOpen [317]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3_initialize <cycle 1> [116]
+[318]    0.0    0.00    0.00       1         pthreadMutexFree [318]
+-----------------------------------------------
+                0.00    0.00       1/1           unixOpen [354]
+[319]    0.0    0.00    0.00       1         robust_open [319]
+                0.00    0.00       1/1           posixOpen [317]
+-----------------------------------------------
+                0.00    0.00       1/1           openDatabase [311]
+[320]    0.0    0.00    0.00       1         setupLookaside [320]
+                0.00    0.00       1/2681        sqlite3Malloc [110]
+                0.00    0.00       1/5399        sqlite3MemSize [90]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3RunParser <cycle 2> [133]
+[321]    0.0    0.00    0.00       1         sqlite3AddDefaultValue [321]
+                0.00    0.00       2/10421       pthreadMutexLeave [68]
+                0.00    0.00       2/15203       sqlite3_free [51]
+                0.00    0.00       2/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       1/42513       walkExpr [37]
+                0.00    0.00       1/15007       sqlite3DbStrNDup [57]
+                0.00    0.00       1/4           sqlite3DbSpanDup [265]
+                0.00    0.00       1/2501        exprDup [166]
+                0.00    0.00       1/17506       sqlite3ExprDeleteNN [48]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3InitOne <cycle 2> [291]
+[322]    0.0    0.00    0.00       1         sqlite3AnalysisLoad [322]
+                0.00    0.00       1/2505        sqlite3FindTable [120]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3LeaveMutexAndCloseZombie [128]
+[323]    0.0    0.00    0.00       1         sqlite3BtreeClose [323]
+                0.00    0.00       3/10421       pthreadMutexLeave [68]
+                0.00    0.00       3/15203       sqlite3_free [51]
+                0.00    0.00       1/2           sqlite3BtreeRollback [289]
+                0.00    0.00       1/2           sqlite3SchemaClear [294]
+                0.00    0.00       1/3           sqlite3BtreeSchema [273]
+                0.00    0.00       1/1           dbpageClose [304]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3InitOne <cycle 2> [291]
+[324]    0.0    0.00    0.00       1         sqlite3BtreeCommit [324]
+-----------------------------------------------
+                0.00    0.00       1/1           openDatabase [311]
+[325]    0.0    0.00    0.00       1         sqlite3BtreeOpen [325]
+                0.00    0.00       3/7           sqlite3MallocZero [255]
+                0.00    0.00       2/10006       sqlite3_uri_boolean [71]
+                0.00    0.00       2/2           sqlite3PagerSetPagesize [292]
+                0.00    0.00       2/2503        setSectorSize [143]
+                0.00    0.00       2/5           unixFileControl [262]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+                0.00    0.00       1/15203       sqlite3_free [51]
+                0.00    0.00       1/1           unixOpen [354]
+                0.00    0.00       1/2505        unixDeviceCharacteristics [123]
+                0.00    0.00       1/2502        unixAccess [157]
+                0.00    0.00       1/3           unicodeDestroy [285]
+                0.00    0.00       1/2535        unixRead [114]
+                0.00    0.00       1/3           sqlite3BtreeSchema [273]
+                0.00    0.00       1/2681        sqlite3Malloc [110]
+                0.00    0.00       1/1           unixFullPathname [353]
+                0.00    0.00       1/4           pcache1EnforceMaxPage [264]
+                0.00    0.00       1/3           pcache1Cachesize [271]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3InitOne <cycle 2> [291]
+[326]    0.0    0.00    0.00       1         sqlite3BtreeSetCacheSize [326]
+                0.00    0.00       1/4           pcache1EnforceMaxPage [264]
+                0.00    0.00       1/3           pcache1Cachesize [271]
+-----------------------------------------------
+                0.00    0.00       1/1           do_meta_command [306]
+[327]    0.0    0.00    0.00       1         sqlite3Close [327]
+                0.00    0.00       1/2506        sqlite3VtabUnlockList [119]
+                0.00    0.00       1/2503        callFinaliser [142]
+                0.00    0.00       1/40223       sqlite3GetToken [38]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+                0.00    0.00       1/15203       sqlite3_free [51]
+                0.00    0.00       1/2504        sqlite3LeaveMutexAndCloseZombie [128]
+-----------------------------------------------
+                0.00    0.00       1/1           resolveOrderGroupBy [172]
+[328]    0.0    0.00    0.00       1         sqlite3ExprCoveredByIndex [328]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3RunParser <cycle 2> [133]
+[329]    0.0    0.00    0.00       1         sqlite3ExprFunction [329]
+                0.00    0.00       1/15001       sqlite3ExprAlloc [63]
+                0.00    0.00       1/1           sqlite3ResolveSelfReference [338]
+-----------------------------------------------
+                0.00    0.00       1/1           exprDup [166]
+[330]    0.0    0.00    0.00       1         sqlite3ExprListDup [330]
+-----------------------------------------------
+                0.00    0.00       1/1           hashDestroy [309]
+[331]    0.0    0.00    0.00       1         sqlite3Fts3HashClear [331]
+                0.00    0.00       7/10421       pthreadMutexLeave [68]
+                0.00    0.00       7/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3VdbeExec [4]
+[332]    0.0    0.00    0.00       1         sqlite3GetVarint32 [332]
+-----------------------------------------------
+                0.00    0.00       1/1           keyInfoFromExprList [310]
+[333]    0.0    0.00    0.00       1         sqlite3KeyInfoAlloc [333]
+                0.00    0.00       1/117622      sqlite3DbMallocRawNN [24]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3InitOne <cycle 2> [291]
+[334]    0.0    0.00    0.00       1         sqlite3MPrintf [334]
+                0.00    0.00       1/15006       sqlite3VMPrintf [58]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3_initialize <cycle 1> [116]
+[335]    0.0    0.00    0.00       1         sqlite3MemInit [335]
+-----------------------------------------------
+                0.00    0.00       1/1           openDatabase [311]
+[336]    0.0    0.00    0.00       1         sqlite3ParseUri [336]
+                0.00    0.00       1/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       1/2681        sqlite3Malloc [110]
+                0.00    0.00       1/2           sqlite3_vfs_find [297]
+-----------------------------------------------
+                0.00    0.00       1/1           openDatabase [311]
+[337]    0.0    0.00    0.00       1         sqlite3RegisterPerConnectionBuiltinFunctions [337]
+                0.00    0.00       1/7           sqlite3_overload_function [257]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3ExprFunction [329]
+[338]    0.0    0.00    0.00       1         sqlite3ResolveSelfReference [338]
+                0.00    0.00       1/2501        exprSetHeight [167]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3LeaveMutexAndCloseZombie [128]
+[339]    0.0    0.00    0.00       1         sqlite3RollbackAll [339]
+                0.00    0.00       1/2           sqlite3BtreeRollback [289]
+                0.00    0.00       1/2503        callFinaliser [142]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3StartTable <cycle 2> [282]
+[340]    0.0    0.00    0.00       1         sqlite3TwoPartName [340]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3LeaveMutexAndCloseZombie [128]
+[341]    0.0    0.00    0.00       1         sqlite3ValueFree [341]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3Select <cycle 2> [14]
+[342]    0.0    0.00    0.00       1         sqlite3VdbeAppendP4 [342]
+                0.00    0.00       1/117637      sqlite3DbFreeNN [23]
+                0.00    0.00       1/5005        pragmaVtabBestIndex [93]
+                0.00    0.00       1/2502        freeP4 [147]
+-----------------------------------------------
+                0.00    0.00       1/1           do_meta_command [306]
+[343]    0.0    0.00    0.00       1         sqlite3_close [343]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[344]    0.0    0.00    0.00       1         sqlite3_enable_load_extension [344]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[345]    0.0    0.00    0.00       1         sqlite3_fileio_init [345]
+                0.00    0.00       3/15          sqlite3_create_function [248]
+-----------------------------------------------
+                0.00    0.00       1/1           do_meta_command [306]
+[346]    0.0    0.00    0.00       1         sqlite3_mprintf [346]
+                0.00    0.00       2/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       2/2           sqlite3_vmprintf [298]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[347]    0.0    0.00    0.00       1         sqlite3_open [347]
+-----------------------------------------------
+                                   1             sqlite3_initialize <cycle 1> [116]
+[348]    0.0    0.00    0.00       1         sqlite3_os_init <cycle 1> [348]
+                0.00    0.00       1/19          pthreadMutexAlloc [245]
+                                   4             sqlite3_vfs_register <cycle 1> [261]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[349]    0.0    0.00    0.00       1         sqlite3_shathree_init [349]
+                0.00    0.00       4/15          sqlite3_create_function [248]
+-----------------------------------------------
+                0.00    0.00       1/1           unixOpen [354]
+[350]    0.0    0.00    0.00       1         sqlite3_sleep [350]
+                0.00    0.00       1/19          pthreadMutexAlloc [245]
+                0.00    0.00       1/10423       pthreadMutexEnter [67]
+                0.00    0.00       1/10421       pthreadMutexLeave [68]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[351]    0.0    0.00    0.00       1         sqlite3_sqlar_init [351]
+                0.00    0.00       2/15          sqlite3_create_function [248]
+-----------------------------------------------
+                0.00    0.00       1/1           dbpageClose [304]
+[352]    0.0    0.00    0.00       1         unixClose [352]
+                0.00    0.00       2/2504        closePendingFds [124]
+                0.00    0.00       2/10421       pthreadMutexLeave [68]
+                0.00    0.00       1/2           verifyDbFile [299]
+                0.00    0.00       1/10423       pthreadMutexEnter [67]
+                0.00    0.00       1/1           closeUnixFile [303]
+                0.00    0.00       1/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3BtreeOpen [325]
+[353]    0.0    0.00    0.00       1         unixFullPathname [353]
+                0.00    0.00       1/15203       sqlite3_free [51]
+                0.00    0.00       1/2502        sqlite3_snprintf [156]
+-----------------------------------------------
+                0.00    0.00       1/1           sqlite3BtreeOpen [325]
+[354]    0.0    0.00    0.00       1         unixOpen [354]
+                0.00    0.00       3/2521        sqlite3_initialize <cycle 1> [116]
+                0.00    0.00       2/10423       pthreadMutexEnter [67]
+                0.00    0.00       2/10421       pthreadMutexLeave [68]
+                0.00    0.00       2/2681        sqlite3Malloc [110]
+                0.00    0.00       1/10006       sqlite3_uri_boolean [71]
+                0.00    0.00       1/1           posixIoFinderImpl [316]
+                0.00    0.00       1/1           sqlite3_sleep [350]
+                0.00    0.00       1/2           verifyDbFile [299]
+                0.00    0.00       1/1           robust_open [319]
+-----------------------------------------------
+                0.00    0.00       1/1           pcache1Create [312]
+[355]    0.0    0.00    0.00       1         vdbeSorterFlushThread [355]
+                0.00    0.00       1/7           sqlite3MallocZero [255]
+                0.00    0.00       1/15203       sqlite3_free [51]
+-----------------------------------------------
+                0.00    0.00       1/1           arDotCommand [301]
+[356]    0.0    0.00    0.00       1         zipfileRegister [356]
+                0.00    0.00       1/14          createModule [249]
+                0.00    0.00       1/3           sqlite3_create_module [283]
+                0.00    0.00       1/7           sqlite3_overload_function [257]
+                0.00    0.00       1/15          sqlite3_create_function [248]
+-----------------------------------------------
+                0.00    0.00    2501/2501        process_input [3]
+[1639]   0.0    0.00    0.00    2501         _all_whitespace [1639]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [1639] _all_whitespace (shell.c) [217] sqlite3BinaryCompareCollSeq (sqlite3.c) [55] sqlite3StrAccumFinish (sqlite3.c)
+ [160] allocateCursor (sqlite3.c) [153] sqlite3BitvecDestroy (sqlite3.c) [54] sqlite3TableLock (sqlite3.c)
+  [69] applyNumericAffinity (sqlite3.c) [154] sqlite3BtreeBeginTrans (sqlite3.c) [340] sqlite3TwoPartName (sqlite3.c)
+ [301] arDotCommand (shell.c) [323] sqlite3BtreeClose (sqlite3.c) [58] sqlite3VMPrintf (sqlite3.c)
+  [17] atexit                [178] sqlite3BtreeCloseCursor (sqlite3.c) [47] sqlite3VXPrintf (sqlite3.c)
+ [141] btreeEndTransaction (sqlite3.c) [324] sqlite3BtreeCommit (sqlite3.c) [341] sqlite3ValueFree (sqlite3.c)
+ [302] btreeEnterAll (sqlite3.c) [179] sqlite3BtreeCursor (sqlite3.c) [42] sqlite3ValueText (sqlite3.c)
+ [161] btreeGetPage (sqlite3.c) [118] sqlite3BtreeGetMeta (sqlite3.c) [40] sqlite3VdbeAddOp3 (sqlite3.c)
+ [239] btreeInitPage (sqlite3.c) [9] sqlite3BtreeNext (sqlite3.c) [102] sqlite3VdbeAddOp4Int (sqlite3.c)
+  [10] btreeNext (sqlite3.c) [325] sqlite3BtreeOpen (sqlite3.c) [342] sqlite3VdbeAppendP4 (sqlite3.c)
+   [7] btreeParseCellPtr (sqlite3.c) [289] sqlite3BtreeRollback (sqlite3.c) [88] sqlite3VdbeChangeP4 (sqlite3.c)
+  [18] btreeParseCellPtrNoPayload (sqlite3.c) [273] sqlite3BtreeSchema (sqlite3.c) [134] sqlite3VdbeClearObject (sqlite3.c)
+ [162] btreeReleaseAllCursorPages (sqlite3.c) [326] sqlite3BtreeSetCacheSize (sqlite3.c) [59] sqlite3VdbeComment (sqlite3.c)
+ [142] callFinaliser (sqlite3.c) [274] sqlite3CheckObjectName (sqlite3.c) [92] sqlite3VdbeCreate (sqlite3.c)
+   [6] callback (shell.c)    [327] sqlite3Close (sqlite3.c) [135] sqlite3VdbeDelete (sqlite3.c)
+ [163] clearSelect (sqlite3.c) [180] sqlite3CodeVerifySchema (sqlite3.c) [4] sqlite3VdbeExec (sqlite3.c)
+ [124] closePendingFds (sqlite3.c) [66] sqlite3CollapseDatabaseArray (sqlite3.c) [136] sqlite3VdbeFinalize (sqlite3.c)
+ [303] closeUnixFile (sqlite3.c) [107] sqlite3CompareAffinity (sqlite3.c) [96] sqlite3VdbeHalt (sqlite3.c)
+ [212] codeCompare (sqlite3.c) [236] sqlite3CreateFunc (sqlite3.c) [137] sqlite3VdbeMakeReady (sqlite3.c)
+ [213] codeInteger (sqlite3.c) [23] sqlite3DbFreeNN (sqlite3.c) [35] sqlite3VdbeMemGrow (sqlite3.c)
+  [45] columnMallocFailure (sqlite3.c) [36] sqlite3DbMallocRaw (sqlite3.c) [224] sqlite3VdbeMemMakeWriteable (sqlite3.c)
+  [46] columnMem (sqlite3.c)  [24] sqlite3DbMallocRawNN (sqlite3.c) [43] sqlite3VdbeMemSetStr (sqlite3.c)
+  [75] columnName (sqlite3.c) [235] sqlite3DbMallocZero (sqlite3.c) [225] sqlite3VdbeMemShallowCopy (sqlite3.c)
+  [76] columnTypeImpl (sqlite3.c) [53] sqlite3DbRealloc (sqlite3.c) [196] sqlite3VdbeMemStringify (sqlite3.c)
+ [214] comparisonAffinity (sqlite3.c) [87] sqlite3DbReallocOrFree (sqlite3.c) [138] sqlite3VdbeReset (sqlite3.c)
+ [164] computeLimitRegisters (sqlite3.c) [265] sqlite3DbSpanDup (sqlite3.c) [22] sqlite3VdbeSerialGet (sqlite3.c)
+ [100] computeYMD_HMS (sqlite3.c) [290] sqlite3DbStrDup (sqlite3.c) [197] sqlite3VdbeSetNumCols (sqlite3.c)
+ [260] createCollation (sqlite3.c) [57] sqlite3DbStrNDup (sqlite3.c) [198] sqlite3VdbeTransferError (sqlite3.c)
+ [249] createModule (sqlite3.c) [95] sqlite3DeleteTable (sqlite3.c) [251] sqlite3VtabCreateModule (sqlite3.c)
+ [234] dbMallocRawFinish (sqlite3.c) [115] sqlite3Dequote (sqlite3.c) [119] sqlite3VtabUnlockList (sqlite3.c)
+ [304] dbpageClose (sqlite3.c) [275] sqlite3EndTable (sqlite3.c) [11] sqlite3WalkExprList (sqlite3.c)
+ [240] decodeFlags (sqlite3.c) [244] sqlite3ErrorFinish (sqlite3.c) [15] sqlite3WhereBegin (sqlite3.c)
+ [305] deduceDatabaseType (shell.c) [80] sqlite3Expr (sqlite3.c) [199] sqlite3WhereClauseClear (sqlite3.c)
+ [267] deleteTable (sqlite3.c) [81] sqlite3ExprAffinity (sqlite3.c) [200] sqlite3WhereEnd (sqlite3.c)
+ [306] do_meta_command (shell.c) [63] sqlite3ExprAlloc (sqlite3.c) [13] sqlite3WhereExprUsage (sqlite3.c)
+ [125] dupedExprNodeSize (sqlite3.c) [218] sqlite3ExprAttachSubtrees (sqlite3.c) [145] sqlite3WhereFindTerm (sqlite3.c)
+ [165] dupedExprSize (sqlite3.c) [181] sqlite3ExprCacheRemove (sqlite3.c) [201] sqlite3WhereSplit (sqlite3.c)
+  [16] exprAnalyze (sqlite3.c) [219] sqlite3ExprCode (sqlite3.c) [343] sqlite3_close
+ [166] exprDup (sqlite3.c)   [220] sqlite3ExprCodeAtInit (sqlite3.c) [139] sqlite3_close_v2
+  [89] exprListDeleteNN (sqlite3.c) [182] sqlite3ExprCodeExprList (sqlite3.c) [109] sqlite3_column_count
+ [106] exprMightBeIndexed (sqlite3.c) [64] sqlite3ExprCodeGetColumn (sqlite3.c) [82] sqlite3_column_name
+ [104] exprNodeIsConstant (sqlite3.c) [77] sqlite3ExprCodeGetColumnOfTable (sqlite3.c) [78] sqlite3_column_text
+ [167] exprSetHeight (sqlite3.c) [62] sqlite3ExprCodeTarget (sqlite3.c) [83] sqlite3_column_type
+ [215] exprSrcCount (sqlite3.c) [108] sqlite3ExprCodeTemp (sqlite3.c) [226] sqlite3_complete
+ [252] findCollSeqEntry (sqlite3.c) [183] sqlite3ExprCollSeq (sqlite3.c) [296] sqlite3_config
+  [91] findElementWithHash (sqlite3.c) [276] sqlite3ExprCompare (sqlite3.c) [248] sqlite3_create_function
+ [268] freeIndex (sqlite3.c) [328] sqlite3ExprCoveredByIndex (sqlite3.c) [238] sqlite3_create_function_v2
+ [147] freeP4 (sqlite3.c)     [48] sqlite3ExprDeleteNN (sqlite3.c) [283] sqlite3_create_module
+ [269] fts3EvalNearTrim (sqlite3.c) [329] sqlite3ExprFunction (sqlite3.c) [50] sqlite3_debug
+ [254] fts3MallocZero (sqlite3.c) [221] sqlite3ExprIfFalse (sqlite3.c) [344] sqlite3_enable_load_extension
+ [307] fts3Rehash (sqlite3.c) [184] sqlite3ExprIsInteger (sqlite3.c) [266] sqlite3_errcode
+ [308] fts3StrCompare (sqlite3.c) [277] sqlite3ExprListCompare (sqlite3.c) [19] sqlite3_exec
+ [270] fts3StrHash (sqlite3.c) [70] sqlite3ExprListDelete (sqlite3.c) [345] sqlite3_fileio_init
+  [30] getAndInitPage (sqlite3.c) [330] sqlite3ExprListDup (sqlite3.c) [146] sqlite3_finalize
+  [21] getCellInfo (sqlite3.c) [41] sqlite3ExprWalkNoop (sqlite3.c) [51] sqlite3_free
+  [26] getPageNormal (sqlite3.c) [232] sqlite3FindFunction (sqlite3.c) [116] sqlite3_initialize
+ [126] growOp3 (sqlite3.c)   [278] sqlite3FindIndex (sqlite3.c) [256] sqlite3_malloc
+ [309] hashDestroy (sqlite3.c) [120] sqlite3FindTable (sqlite3.c) [227] sqlite3_malloc64
+ [101] invokeProfileCallback (sqlite3.c) [331] sqlite3Fts3HashClear (sqlite3.c) [346] sqlite3_mprintf
+ [310] keyInfoFromExprList (sqlite3.c) [279] sqlite3Fts3HashInsert (sqlite3.c) [347] sqlite3_open
+ [148] local_getline (shell.c) [121] sqlite3GetInt32 (sqlite3.c) [348] sqlite3_os_init
+ [237] matchQuality (sqlite3.c) [38] sqlite3GetToken (sqlite3.c) [257] sqlite3_overload_function
+  [12] memjrnlTruncate (sqlite3.c) [332] sqlite3GetVarint32 (sqlite3.c) [202] sqlite3_prepare_v2
+  [33] moveToChild (sqlite3.c) [253] sqlite3HashClear (sqlite3.c) [44] sqlite3_result_text64
+  [32] moveToLeftmost (sqlite3.c) [233] sqlite3HashInsert (sqlite3.c) [349] sqlite3_shathree_init
+  [34] moveToParent (sqlite3.c) [61] sqlite3IdListAppend (sqlite3.c) [350] sqlite3_sleep
+ [168] moveToRoot (sqlite3.c) [155] sqlite3IndexedByLookup (sqlite3.c) [156] sqlite3_snprintf
+ [311] openDatabase (sqlite3.c) [222] sqlite3Init (sqlite3.c) [228] sqlite3_sql
+ [169] output_quoted_escaped_string (shell.c) [280] sqlite3InitCallback (sqlite3.c) [351] sqlite3_sqlar_init
+ [170] pagerPagecount (sqlite3.c) [291] sqlite3InitOne (sqlite3.c) [5] sqlite3_step
+ [149] pagerUnlockAndRollback (sqlite3.c) [281] sqlite3InsertBuiltinFuncs (sqlite3.c) [71] sqlite3_uri_boolean
+ [171] pager_end_transaction (sqlite3.c) [73] sqlite3IsRowid (sqlite3.c) [284] sqlite3_uri_parameter
+ [286] pager_reset (sqlite3.c) [333] sqlite3KeyInfoAlloc (sqlite3.c) [79] sqlite3_value_text
+ [150] pager_unlock (sqlite3.c) [128] sqlite3LeaveMutexAndCloseZombie (sqlite3.c) [297] sqlite3_vfs_find
+ [247] pcache1Alloc (sqlite3.c) [185] sqlite3LocateTable (sqlite3.c) [261] sqlite3_vfs_register
+ [271] pcache1Cachesize (sqlite3.c) [186] sqlite3LocateTableItem (sqlite3.c) [298] sqlite3_vmprintf
+ [312] pcache1Create (sqlite3.c) [129] sqlite3LockAndPrepare (sqlite3.c) [56] strAccumFinishRealloc (sqlite3.c)
+ [313] pcache1Destroy (sqlite3.c) [84] sqlite3LogEstAdd (sqlite3.c) [229] termCanDriveIndex (sqlite3.c)
+ [264] pcache1EnforceMaxPage (sqlite3.c) [334] sqlite3MPrintf (sqlite3.c) [285] unicodeDestroy (sqlite3.c)
+  [27] pcache1Fetch (sqlite3.c) [110] sqlite3Malloc (sqlite3.c) [157] unixAccess (sqlite3.c)
+ [241] pcache1FetchStage2 (sqlite3.c) [255] sqlite3MallocZero (sqlite3.c) [352] unixClose (sqlite3.c)
+ [246] pcache1Free (sqlite3.c) [111] sqlite3MemFree (sqlite3.c) [123] unixDeviceCharacteristics (sqlite3.c)
+ [242] pcache1FreePage (sqlite3.c) [335] sqlite3MemInit (sqlite3.c) [262] unixFileControl (sqlite3.c)
+ [314] pcache1Init (sqlite3.c) [112] sqlite3MemMalloc (sqlite3.c) [74] unixFileLock (sqlite3.c)
+ [151] pcache1Truncate (sqlite3.c) [113] sqlite3MemRoundup (sqlite3.c) [203] unixFileSize (sqlite3.c)
+ [315] pcache1TruncateUnsafe (sqlite3.c) [90] sqlite3MemSize (sqlite3.c) [353] unixFullPathname (sqlite3.c)
+  [29] pcache1Unpin (sqlite3.c) [259] sqlite3MutexInit (sqlite3.c) [204] unixLock (sqlite3.c)
+ [243] pcacheFetchFinishWithInit (sqlite3.c) [144] sqlite3NameFromToken (sqlite3.c) [354] unixOpen (sqlite3.c)
+ [316] posixIoFinderImpl (sqlite3.c) [187] sqlite3OpenTable (sqlite3.c) [114] unixRead (sqlite3.c)
+ [317] posixOpen (sqlite3.c) [223] sqlite3PExpr (sqlite3.c) [158] unixUnlock (sqlite3.c)
+ [272] pragmaLocate (sqlite3.c) [292] sqlite3PagerSetPagesize (sqlite3.c) [230] valueFromExpr.constprop.688 (sqlite3.c)
+  [93] pragmaVtabBestIndex (sqlite3.c) [188] sqlite3PagerSharedLock (sqlite3.c) [205] valueToText (sqlite3.c)
+ [245] pthreadMutexAlloc (sqlite3.c) [31] sqlite3PagerUnrefNotNull (sqlite3.c) [206] vdbeChangeP4Full (sqlite3.c)
+  [67] pthreadMutexEnter (sqlite3.c) [97] sqlite3PagerUnrefPageOne (sqlite3.c) [86] vdbeClrCopy (sqlite3.c)
+ [318] pthreadMutexFree (sqlite3.c) [336] sqlite3ParseUri (sqlite3.c) [140] vdbeFreeOpArray (sqlite3.c)
+ [258] pthreadMutexInit (sqlite3.c) [130] sqlite3ParserReset (sqlite3.c) [103] vdbeSafetyNotNull (sqlite3.c)
+  [68] pthreadMutexLeave (sqlite3.c) [25] sqlite3PcacheFetchFinish (sqlite3.c) [355] vdbeSorterFlushThread (sqlite3.c)
+  [94] querySharedCacheTableLock (sqlite3.c) [28] sqlite3PcacheRelease (sqlite3.c) [60] vdbeVComment (sqlite3.c)
+ [152] releaseAllSavepoints (sqlite3.c) [293] sqlite3PcacheTruncate (sqlite3.c) [299] verifyDbFile (sqlite3.c)
+  [49] resolveExprStep (sqlite3.c) [131] sqlite3Prepare (sqlite3.c) [263] vfsUnlink (sqlite3.c)
+ [172] resolveOrderGroupBy (sqlite3.c) [132] sqlite3ReadSchema (sqlite3.c) [37] walkExpr (sqlite3.c)
+ [127] resolveP2Values (sqlite3.c) [337] sqlite3RegisterPerConnectionBuiltinFunctions (sqlite3.c) [231] whereClauseInsert (sqlite3.c)
+ [173] resolveSelectStep (sqlite3.c) [72] sqlite3ResolveExprNames (sqlite3.c) [207] whereInfoFree (sqlite3.c)
+ [287] resolve_backslashes (shell.c) [338] sqlite3ResolveSelfReference (sqlite3.c) [208] whereLoopAddBtree (sqlite3.c)
+ [319] robust_open (sqlite3.c) [339] sqlite3RollbackAll (sqlite3.c) [209] whereLoopAddBtreeIndex (sqlite3.c)
+   [1] runOneSqlLine (shell.c) [133] sqlite3RunParser (sqlite3.c) [210] whereLoopAddOr (sqlite3.c)
+ [288] saveCursorsOnList (sqlite3.c) [122] sqlite3SafetyCheckOk (sqlite3.c) [52] whereLoopClear (sqlite3.c)
+ [174] selectAddSubqueryTypeInfo (sqlite3.c) [294] sqlite3SchemaClear (sqlite3.c) [65] whereLoopClearUnion (sqlite3.c)
+ [175] selectExpander (sqlite3.c) [295] sqlite3SchemaGet (sqlite3.c) [105] whereLoopFindLesser (sqlite3.c)
+ [176] selectInnerLoop (sqlite3.c) [14] sqlite3Select (sqlite3.c) [211] whereLoopOutputAdjust (sqlite3.c)
+ [177] selectPopWith (sqlite3.c) [189] sqlite3SelectNew (sqlite3.c) [300] wherePathSatisfiesOrderBy (sqlite3.c)
+ [143] setSectorSize (sqlite3.c) [190] sqlite3SelectPrep (sqlite3.c) [159] wherePathSolver (sqlite3.c)
+ [320] setupLookaside (sqlite3.c) [191] sqlite3SelectWalkNoop (sqlite3.c) [98] whereScanInit (sqlite3.c)
+ [216] shell_callback (shell.c) [192] sqlite3SrcListAppend (sqlite3.c) [99] whereScanNext (sqlite3.c)
+   [2] shell_exec (shell.c)  [193] sqlite3SrcListAppendFromTerm (sqlite3.c) [85] yy_destructor (sqlite3.c)
+ [321] sqlite3AddDefaultValue (sqlite3.c) [194] sqlite3SrcListAssignCursors (sqlite3.c) [356] zipfileRegister (shell.c)
+ [250] sqlite3AffinityType (sqlite3.c) [195] sqlite3SrcListDelete (sqlite3.c) [20] <cycle 1>
+ [322] sqlite3AnalysisLoad (sqlite3.c) [282] sqlite3StartTable (sqlite3.c) [8] <cycle 2>
+ [117] sqlite3AuthCheck (sqlite3.c) [39] sqlite3StrAccumAppend (sqlite3.c)
